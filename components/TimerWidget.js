@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { PauseCircle, PlayCircle, RotateCcw } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 
 const formatTime = (totalSeconds) => {
   const h = Math.floor(totalSeconds / 3600)
@@ -17,10 +17,18 @@ const formatTime = (totalSeconds) => {
   return `${h}:${m}:${s}`;
 };
 
-const TimerWidget = ({ onSave, totalSeconds }) => {
+const TimerWidget = ({ onSave, totalSeconds, miniOptions }) => {
   const [running, setRunning] = useState(false);
   const [elapsed, setElapsed] = useState(0);
+  const [miniId, setMiniId] = useState(() => miniOptions?.[0]?.id || "");
   const startRef = useRef(null);
+  const hasOptions = Boolean(miniOptions?.length);
+  const selectedMiniId = useMemo(() => {
+    if (!hasOptions) return "";
+    const exists = miniOptions.some((opt) => opt.id === miniId);
+    if (exists) return miniId;
+    return miniOptions[0].id;
+  }, [hasOptions, miniId, miniOptions]);
 
   useEffect(() => {
     let raf;
@@ -36,6 +44,7 @@ const TimerWidget = ({ onSave, totalSeconds }) => {
   }, [running]);
 
   const handleStart = () => {
+    if (!selectedMiniId) return;
     startRef.current = Date.now();
     setRunning(true);
   };
@@ -43,8 +52,8 @@ const TimerWidget = ({ onSave, totalSeconds }) => {
   const handlePause = () => {
     setRunning(false);
     const seconds = Math.floor(elapsed);
-    if (seconds > 0) {
-      onSave?.(seconds);
+    if (seconds > 0 && selectedMiniId) {
+      onSave?.(selectedMiniId, seconds);
     }
     setElapsed(0);
     startRef.current = null;
@@ -61,6 +70,28 @@ const TimerWidget = ({ onSave, totalSeconds }) => {
       <div className="flex items-center justify-between">
         <div className="text-sm font-semibold text-slate-100">Fokus timer</div>
         <div className="text-xs text-emerald-200/80">Umumiy: {formatTime(totalSeconds || 0)}</div>
+      </div>
+
+      <div className="mt-3">
+        <label className="text-xs uppercase tracking-wide text-slate-300/80">Mini task</label>
+        <select
+          value={selectedMiniId}
+          onChange={(e) => setMiniId(e.target.value)}
+          className="mt-1 w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-100 focus:border-emerald-300/60 focus:outline-none"
+          disabled={!hasOptions}
+        >
+          {hasOptions ? (
+            miniOptions.map((opt) => (
+              <option key={opt.id} value={opt.id} className="bg-slate-900 text-slate-100">
+                {opt.label}
+              </option>
+            ))
+          ) : (
+            <option value="" className="bg-slate-900 text-slate-100">
+              Mini task yo‘q
+            </option>
+          )}
+        </select>
       </div>
 
       <div className="mt-4 flex items-center justify-center">
@@ -84,7 +115,8 @@ const TimerWidget = ({ onSave, totalSeconds }) => {
         ) : (
           <button
             onClick={handleStart}
-            className="flex items-center gap-2 rounded-xl border border-emerald-300/60 bg-white/10 px-4 py-2 text-sm font-semibold text-emerald-100"
+            className="flex items-center gap-2 rounded-xl border border-emerald-300/60 bg-white/10 px-4 py-2 text-sm font-semibold text-emerald-100 disabled:cursor-not-allowed disabled:border-white/10 disabled:text-slate-400"
+            disabled={!selectedMiniId}
           >
             <PlayCircle className="h-5 w-5" />
             Start

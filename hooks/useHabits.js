@@ -45,6 +45,7 @@ const initialState = {
       tasks: baseSampleTasks,
       completions: {},
       timerTotalSeconds: 0,
+      timerByMini: {},
     },
   ],
 };
@@ -169,11 +170,15 @@ const useHabits = () => {
   );
 
   const addTimerSeconds = useCallback(
-    (seconds) => {
-      if (!seconds) return;
+    (miniId, seconds) => {
+      if (!seconds || !miniId) return;
       updateProfile((profile) => ({
         ...profile,
         timerTotalSeconds: (profile.timerTotalSeconds || 0) + seconds,
+        timerByMini: {
+          ...(profile.timerByMini || {}),
+          [miniId]: (profile.timerByMini?.[miniId] || 0) + seconds,
+        },
       }));
     },
     [updateProfile],
@@ -188,6 +193,7 @@ const useHabits = () => {
       tasks: baseSampleTasks,
       completions: {},
       timerTotalSeconds: 0,
+      timerByMini: {},
     };
     setState((prev) => ({
       ...prev,
