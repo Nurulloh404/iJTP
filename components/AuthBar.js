@@ -6,6 +6,8 @@ import { useState } from "react";
 const AuthBar = ({ currentProfile, profiles, onLogin, onRegister, onSwitch }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
 
   return (
     <div className="rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-2xl glass-surface">
@@ -26,8 +28,15 @@ const AuthBar = ({ currentProfile, profiles, onLogin, onRegister, onSwitch }) =>
             className="w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-400 focus:border-emerald-300/60 focus:outline-none"
             placeholder="email@example.com"
           />
+          <input
+            type="password"
+            value={loginPassword}
+            onChange={(e) => setLoginPassword(e.target.value)}
+            className="w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-400 focus:border-emerald-300/60 focus:outline-none"
+            placeholder="Parol"
+          />
           <button
-            onClick={() => onLogin?.(email)}
+            onClick={() => onLogin?.(email, loginPassword)}
             className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/10 px-3 py-2 text-xs font-semibold text-slate-100 hover:border-emerald-300/60"
           >
             <LogIn className="h-4 w-4" />
@@ -49,8 +58,15 @@ const AuthBar = ({ currentProfile, profiles, onLogin, onRegister, onSwitch }) =>
             className="w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-400 focus:border-emerald-300/60 focus:outline-none"
             placeholder="email@example.com"
           />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-400 focus:border-emerald-300/60 focus:outline-none"
+            placeholder="Parol"
+          />
           <button
-            onClick={() => onRegister?.(name, email)}
+            onClick={() => onRegister?.(name, email, password)}
             className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 to-fuchsia-500 px-3 py-2 text-xs font-semibold text-slate-900"
           >
             <UserPlus className="h-4 w-4" />

@@ -17,7 +17,7 @@ const formatTime = (totalSeconds) => {
   return `${h}:${m}:${s}`;
 };
 
-const TimerWidget = ({ onSave, totalSeconds, miniOptions }) => {
+const TimerWidget = ({ onSave, totalSeconds, miniOptions, selectedDate }) => {
   const [running, setRunning] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [miniId, setMiniId] = useState(() => miniOptions?.[0]?.id || "");
@@ -53,7 +53,7 @@ const TimerWidget = ({ onSave, totalSeconds, miniOptions }) => {
     setRunning(false);
     const seconds = Math.floor(elapsed);
     if (seconds > 0 && selectedMiniId) {
-      onSave?.(selectedMiniId, seconds);
+      onSave?.(selectedDate, selectedMiniId, seconds);
     }
     setElapsed(0);
     startRef.current = null;

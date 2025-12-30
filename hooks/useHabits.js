@@ -46,6 +46,8 @@ const initialState = {
       completions: {},
       timerTotalSeconds: 0,
       timerByMini: {},
+      timeTracking: {},
+      passwordHash: "guest",
     },
   ],
 };
@@ -79,6 +81,34 @@ export const calculateMaruSlices = (dayData, tasks) => {
   return Object.values(aggregates).map((entry) => ({
     color: entry.color,
     percent: Math.round((entry.count / total) * 100),
+  }));
+};
+
+export const calculateMaruSlicesFromTime = (timeMap, tasks) => {
+  if (!timeMap || !tasks?.length) return [];
+  const miniToMain = new Map();
+  tasks.forEach((main) => {
+    main.minis?.forEach((mini) => {
+      miniToMain.set(mini.id, main);
+    });
+  });
+
+  let total = 0;
+  const aggregates = {};
+  Object.entries(timeMap).forEach(([miniId, seconds]) => {
+    if (!seconds) return;
+    const main = miniToMain.get(miniId);
+    if (!main) return;
+    if (!aggregates[main.id]) aggregates[main.id] = { color: main.color || "#22d3ee", seconds: 0 };
+    aggregates[main.id].seconds += seconds;
+    total += seconds;
+  });
+
+  if (!total) return [];
+
+  return Object.values(aggregates).map((entry) => ({
+    color: entry.color,
+    percent: Math.round((entry.seconds / total) * 100),
   }));
 };
 
@@ -157,7 +187,7 @@ const useHabits = () => {
     [updateProfile],
   );
 
-  const getDayCompletion = useCallback(
+const getDayCompletion = useCallback(
     (date) => {
       const profile = getProfile();
       const day = profile.completions[date] || {};
@@ -170,8 +200,8 @@ const useHabits = () => {
   );
 
   const addTimerSeconds = useCallback(
-    (miniId, seconds) => {
-      if (!seconds || !miniId) return;
+    (date, miniId, seconds) => {
+      if (!seconds || !miniId || !date) return;
       updateProfile((profile) => ({
         ...profile,
         timerTotalSeconds: (profile.timerTotalSeconds || 0) + seconds,
@@ -179,34 +209,48 @@ const useHabits = () => {
           ...(profile.timerByMini || {}),
           [miniId]: (profile.timerByMini?.[miniId] || 0) + seconds,
         },
+        timeTracking: {
+          ...(profile.timeTracking || {}),
+          [date]: {
+            ...(profile.timeTracking?.[date] || {}),
+            [miniId]: (profile.timeTracking?.[date]?.[miniId] || 0) + seconds,
+          },
+        },
       }));
     },
     [updateProfile],
   );
 
-  const registerProfile = useCallback((name, email) => {
-    if (!name?.trim() || !email?.trim()) return;
+  const registerProfile = useCallback((name, email, password) => {
+    if (!name?.trim() || !email?.trim() || !password?.trim()) return;
+    const emailKey = email.trim().toLowerCase();
+    const passwordHash = btoa(password.trim());
+    const exists = state.profiles.some((p) => p.email === emailKey);
+    if (exists) return;
     const profile = {
       id: crypto.randomUUID(),
       name: name.trim(),
-      email: email.trim().toLowerCase(),
+      email: emailKey,
       tasks: baseSampleTasks,
       completions: {},
       timerTotalSeconds: 0,
       timerByMini: {},
+      timeTracking: {},
+      passwordHash,
     };
     setState((prev) => ({
       ...prev,
       currentProfileId: profile.id,
       profiles: [...prev.profiles, profile],
     }));
-  }, []);
+  }, [state.profiles]);
 
-  const loginProfile = useCallback((email) => {
-    if (!email?.trim()) return;
+  const loginProfile = useCallback((email, password) => {
+    if (!email?.trim() || !password?.trim()) return;
+    const hash = btoa(password.trim());
     setState((prev) => {
       const found = prev.profiles.find((p) => p.email === email.trim().toLowerCase());
-      if (!found) return prev;
+      if (!found || found.passwordHash !== hash) return prev;
       return { ...prev, currentProfileId: found.id };
     });
   }, []);
@@ -216,6 +260,7 @@ const useHabits = () => {
   return {
     tasks: profile.tasks,
     completions: profile.completions,
+    timeTracking: profile.timeTracking || {},
     currentProfile: profile,
     addMainTask,
     addMiniTask,

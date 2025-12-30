@@ -9,6 +9,7 @@ import CalendarView from "@/components/CalendarView";
 import DailyChecklist from "@/components/DailyChecklist";
 import TaskManager from "@/components/TaskManager";
 import TimerWidget from "@/components/TimerWidget";
+import YearCalendar from "@/components/YearCalendar";
 import { calculateMaruSlices } from "@/hooks/useHabits";
 import useHabits from "@/hooks/useHabits";
 
@@ -18,6 +19,7 @@ export default function Home() {
   const {
     tasks,
     completions,
+    timeTracking,
     currentProfile,
     profiles,
     addMainTask,
@@ -97,7 +99,7 @@ export default function Home() {
 
           <CalendarView
             tasks={tasks}
-            completions={completions}
+            completions={timeTracking}
             selectedDate={selectedDate}
             onSelectDate={setSelectedDate}
           />
@@ -108,6 +110,8 @@ export default function Home() {
             dayData={dayStats.day}
             onToggle={(miniId) => toggleMiniTask(selectedDate, miniId)}
           />
+
+          <YearCalendar tasks={tasks} timeTracking={timeTracking} year={2026} />
         </div>
 
         <div className="no-scrollbar h-full space-y-4 overflow-y-auto pr-1">
@@ -115,6 +119,7 @@ export default function Home() {
             totalSeconds={currentProfile.timerTotalSeconds}
             onSave={addTimerSeconds}
             miniOptions={miniOptions}
+            selectedDate={selectedDate}
           />
           <TaskManager tasks={tasks} onAddMain={addMainTask} onAddMini={addMiniTask} />
         </div>

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import MaruPie from "./MaruPie";
-import { calculateMaruSlices } from "@/hooks/useHabits";
+import { calculateMaruSlicesFromTime } from "@/hooks/useHabits";
 
 const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
 
@@ -14,7 +14,7 @@ const CalendarView = ({ tasks, completions, selectedDate, onSelectDate }) => {
 
   const renderDay = (day) => {
     const dateStr = new Date(year, month, day).toISOString().slice(0, 10);
-    const slices = calculateMaruSlices(completions[dateStr], tasks);
+    const slices = calculateMaruSlicesFromTime(completions[dateStr], tasks);
     const isSelected = selectedDate === dateStr;
     const isToday = dateStr === today.toISOString().slice(0, 10);
 
