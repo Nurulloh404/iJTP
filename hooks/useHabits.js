@@ -2,128 +2,141 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-const STORAGE_KEY = "glow-habits:v1";
+const STORAGE_KEY = "maru-habits:v1";
 
-const sampleHabits = [
-  {
-    id: "hydrate",
-    title: "1L suv ichish",
-    description: "Kunning birinchi qismida suv balansi.",
-    createdAt: new Date().toISOString(),
-    completedDates: [],
-    streak: 0,
-    lastCompleted: null,
-    color: "emerald",
-  },
-  {
-    id: "focus",
-    title: "25 daqiqalik fokus",
-    description: "Pomodoro sessiyasi + qisqa tanaffus.",
-    createdAt: new Date().toISOString(),
-    completedDates: [],
-    streak: 0,
-    lastCompleted: null,
-    color: "violet",
-  },
-];
-
-const getToday = () => new Date().toISOString().slice(0, 10);
-
-const differenceInDays = (a, b) => {
-  const first = new Date(a);
-  const second = new Date(b);
-  const msInDay = 1000 * 60 * 60 * 24;
-  return Math.round((first - second) / msInDay);
+const sampleData = {
+  tasks: [
+    {
+      id: "it-main",
+      title: "IT",
+      color: "#22d3ee",
+      minis: [
+        { id: "python", title: "Python" },
+        { id: "oop", title: "OOP" },
+        { id: "html", title: "HTML" },
+      ],
+    },
+    {
+      id: "jp-main",
+      title: "Japanese",
+      color: "#f472b6",
+      minis: [
+        { id: "kana", title: "Kana" },
+        { id: "vocab", title: "Vocabulary" },
+      ],
+    },
+    {
+      id: "fit-main",
+      title: "Fitness",
+      color: "#22c55e",
+      minis: [
+        { id: "run", title: "Running" },
+        { id: "core", title: "Core" },
+      ],
+    },
+  ],
+  completions: {},
 };
 
-const calculateStreak = (dates) => {
-  const unique = Array.from(new Set(dates)).sort();
-  if (!unique.length) return 0;
+export const calculateMaruSlices = (dayData, tasks) => {
+  if (!dayData || !tasks?.length) return [];
 
-  let streak = 1;
-  let cursor = unique[unique.length - 1];
+  const miniToMain = new Map();
+  tasks.forEach((main) => {
+    main.minis?.forEach((mini) => {
+      miniToMain.set(mini.id, main);
+    });
+  });
 
-  // Walk backwards until the chain breaks
-  for (let i = unique.length - 2; i >= 0; i -= 1) {
-    const gap = differenceInDays(cursor, unique[i]);
-    if (gap === 1) {
-      streak += 1;
-      cursor = unique[i];
-    } else {
-      break;
+  const aggregates = {};
+  let total = 0;
+
+  Object.entries(dayData).forEach(([miniId, done]) => {
+    if (!done) return;
+    const main = miniToMain.get(miniId);
+    if (!main) return;
+    if (!aggregates[main.id]) {
+      aggregates[main.id] = { color: main.color || "#22d3ee", count: 0 };
     }
-  }
+    aggregates[main.id].count += 1;
+    total += 1;
+  });
 
-  return streak;
+  if (!total) return [];
+
+  return Object.values(aggregates).map((entry) => ({
+    color: entry.color,
+    percent: Math.round((entry.count / total) * 100),
+  }));
 };
 
 const useHabits = () => {
-  const [habits, setHabits] = useState(() => {
-    if (typeof window === "undefined") return sampleHabits;
+  const [state, setState] = useState(() => {
+    if (typeof window === "undefined") return sampleData;
     const stored = localStorage.getItem(STORAGE_KEY);
-    return stored ? JSON.parse(stored) : sampleHabits;
+    return stored ? JSON.parse(stored) : sampleData;
   });
 
-  // Persist changes
   useEffect(() => {
-    if (!habits.length) return;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(habits));
-  }, [habits]);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }, [state]);
 
-  const addHabit = useCallback(({ title, description, color }) => {
-    const newHabit = {
+  const addMainTask = useCallback((title, color) => {
+    if (!title?.trim()) return;
+    const newMain = {
       id: crypto.randomUUID(),
       title: title.trim(),
-      description: description?.trim() || "Odat tafsiloti",
-      createdAt: new Date().toISOString(),
-      completedDates: [],
-      streak: 0,
-      lastCompleted: null,
-      color: color || "emerald",
+      color: color || "#22d3ee",
+      minis: [],
     };
-    setHabits((prev) => [...prev, newHabit]);
+    setState((prev) => ({ ...prev, tasks: [...prev.tasks, newMain] }));
   }, []);
 
-  const toggleHabit = useCallback((habitId) => {
-    const today = getToday();
-    setHabits((prev) =>
-      prev.map((habit) => {
-        if (habit.id !== habitId) return habit;
-
-        const existing = habit.completedDates || [];
-        const completedToday = existing.includes(today);
-        const updatedDates = completedToday
-          ? existing.filter((date) => date !== today)
-          : [...existing, today];
-
-        updatedDates.sort();
-
-        return {
-          ...habit,
-          completedDates: updatedDates,
-          lastCompleted: updatedDates[updatedDates.length - 1] || null,
-          streak: calculateStreak(updatedDates),
-        };
-      }),
-    );
+  const addMiniTask = useCallback((mainId, title) => {
+    if (!title?.trim() || !mainId) return;
+    setState((prev) => ({
+      ...prev,
+      tasks: prev.tasks.map((main) =>
+        main.id === mainId
+          ? { ...main, minis: [...(main.minis || []), { id: crypto.randomUUID(), title: title.trim() }] }
+          : main,
+      ),
+    }));
   }, []);
 
-  const deleteHabit = useCallback((habitId) => {
-    setHabits((prev) => prev.filter((habit) => habit.id !== habitId));
+  const toggleMiniTask = useCallback((date, miniId) => {
+    if (!date || !miniId) return;
+    setState((prev) => {
+      const day = prev.completions[date] || {};
+      const updatedDay = { ...day, [miniId]: !day[miniId] };
+      return {
+        ...prev,
+        completions: {
+          ...prev.completions,
+          [date]: updatedDay,
+        },
+      };
+    });
   }, []);
 
-  const completedTodayCount = useMemo(() => {
-    const today = getToday();
-    return habits.filter((habit) => habit.completedDates?.includes(today)).length;
-  }, [habits]);
+  const getDayCompletion = useCallback(
+    (date) => {
+      const day = state.completions[date] || {};
+      const totalMinis = state.tasks.reduce((sum, main) => sum + (main.minis?.length || 0), 0);
+      const completed = Object.values(day).filter(Boolean).length;
+      const percent = totalMinis ? Math.round((completed / totalMinis) * 100) : 0;
+      return { completed, total: totalMinis, percent, day };
+    },
+    [state.completions, state.tasks],
+  );
 
   return {
-    habits,
-    addHabit,
-    toggleHabit,
-    deleteHabit,
-    completedTodayCount,
-    today: getToday(),
+    tasks: state.tasks,
+    completions: state.completions,
+    addMainTask,
+    addMiniTask,
+    toggleMiniTask,
+    getDayCompletion,
   };
 };
 
