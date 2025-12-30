@@ -4,17 +4,31 @@ import { motion } from "framer-motion";
 import { CalendarDays, Sparkles, Trophy } from "lucide-react";
 import { useMemo, useState } from "react";
 
+import AuthBar from "@/components/AuthBar";
 import CalendarView from "@/components/CalendarView";
 import DailyChecklist from "@/components/DailyChecklist";
 import TaskManager from "@/components/TaskManager";
+import TimerWidget from "@/components/TimerWidget";
 import { calculateMaruSlices } from "@/hooks/useHabits";
 import useHabits from "@/hooks/useHabits";
 
 const todayString = () => new Date().toISOString().slice(0, 10);
 
 export default function Home() {
-  const { tasks, completions, addMainTask, addMiniTask, toggleMiniTask, getDayCompletion } =
-    useHabits();
+  const {
+    tasks,
+    completions,
+    currentProfile,
+    profiles,
+    addMainTask,
+    addMiniTask,
+    toggleMiniTask,
+    getDayCompletion,
+    addTimerSeconds,
+    registerProfile,
+    loginProfile,
+    setActiveProfile,
+  } = useHabits();
   const [selectedDate, setSelectedDate] = useState(todayString());
 
   const dayStats = getDayCompletion(selectedDate);
@@ -70,6 +84,14 @@ export default function Home() {
             </div>
           </header>
 
+          <AuthBar
+            currentProfile={currentProfile}
+            profiles={profiles}
+            onLogin={loginProfile}
+            onRegister={registerProfile}
+            onSwitch={setActiveProfile}
+          />
+
           <CalendarView
             tasks={tasks}
             completions={completions}
@@ -85,7 +107,10 @@ export default function Home() {
           />
         </div>
 
-        <TaskManager tasks={tasks} onAddMain={addMainTask} onAddMini={addMiniTask} />
+        <div className="space-y-4">
+          <TimerWidget totalSeconds={currentProfile.timerTotalSeconds} onSave={addTimerSeconds} />
+          <TaskManager tasks={tasks} onAddMain={addMainTask} onAddMini={addMiniTask} />
+        </div>
       </div>
     </main>
   );
