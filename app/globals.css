@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05060a;
+  --foreground: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Global base styles to reinforce the dark, glassy theme */
+body {
+  background: radial-gradient(circle at 20% 20%, #1f2937 0, transparent 35%),
+    radial-gradient(circle at 80% 0%, #22d3ee26 0, transparent 40%),
+    radial-gradient(circle at 50% 80%, #8b5cf626 0, transparent 35%),
+    #05060a;
+  color: var(--foreground);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.glass-surface {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 80px rgba(0, 0, 0, 0.45),
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #22c55e, #a855f7);
+  border-radius: 999px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
