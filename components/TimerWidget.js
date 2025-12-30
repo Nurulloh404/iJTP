@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { PauseCircle, PlayCircle, RotateCcw } from "lucide-react";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const formatTime = (totalSeconds) => {
   const h = Math.floor(totalSeconds / 3600)
