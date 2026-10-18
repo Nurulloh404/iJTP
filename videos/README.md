@@ -76,5 +76,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 068 | [068-telegram-xabar-tarkibi.mp4](068-telegram-xabar-tarkibi.mp4) | Chek-list | 19.6 s | Egasiga Telegram xabarida nimalar bo'lsin |
 | 069 | [069-bot-qancha-vaqtda-tayyor.mp4](069-bot-qancha-vaqtda-tayyor.mp4) | Savol-javob | 19.7 s | Bot qancha vaqtda tayyor bo'ladi? |
 | 070 | [070-siz-operator-emassiz.mp4](070-siz-operator-emassiz.mp4) | Hikoya | 21.1 s | Siz operator emassiz |
+| 071 | [071-buyurtmam-qayerda.mp4](071-buyurtmam-qayerda.mp4) | Suhbat namunasi | 20.7 s | "Buyurtmam qayerda?" savoliga bot javobi |
+| 072 | [072-bron-eslatma.mp4](072-bron-eslatma.mp4) | Jarayon sxemasi | 16.4 s | Bron eslatmasi o'zi ketadi |
+| 073 | [073-xodim-vs-bot-orgatish.mp4](073-xodim-vs-bot-orgatish.mp4) | Taqqoslash | 20.2 s | Xodimga ham, botga ham o'rgatiladi |
+| 074 | [074-telegram-xabar-3-foyda.mp4](074-telegram-xabar-3-foyda.mp4) | Ro'yxat | 18.6 s | Telegram xabarnomaning 3 foydasi |
+| 075 | [075-birinchi-hafta.mp4](075-birinchi-hafta.mp4) | Qadamlar | 20.2 s | Bot ishga tushgach birinchi hafta |
+| 076 | [076-mijoz-oylanib-qoldi.mp4](076-mijoz-oylanib-qoldi.mp4) | Soat bo'yicha hikoya | 21.3 s | Mijoz o'ylanib qoldi, bot qaytib so'radi |
+| 077 | [077-yillik-tejalgan-vaqt.mp4](077-yillik-tejalgan-vaqt.mp4) | Misol hisob | 20.0 s | Bir yilda tejaladigan vaqt (misol) |
+| 078 | [078-bot-zimmasiga-oladigan-ishlar.mp4](078-bot-zimmasiga-oladigan-ishlar.mp4) | Chek-list | 20.0 s | Bot zimmasiga oladigan ishlar |
+| 079 | [079-mijoz-bot-ekanini-biladimi.mp4](079-mijoz-bot-ekanini-biladimi.mp4) | Savol-javob | 19.1 s | Mijoz bot bilan gaplashayotganini biladimi? |
+| 080 | [080-bot-yordamchi.mp4](080-bot-yordamchi.mp4) | Hikoya | 22.5 s | Bot xodim emas, yordamchi |
 
 Qayta render qilish: `reel/README.md` ga qarang.
