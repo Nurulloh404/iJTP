@@ -56,5 +56,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 048 | [048-yaxshi-bot-javobi-belgilari.mp4](048-yaxshi-bot-javobi-belgilari.mp4) | Chek-list | 20.1 s | Yaxshi bot javobi qanday bo'ladi |
 | 049 | [049-instagram-akkaunt-xavfsizligi.mp4](049-instagram-akkaunt-xavfsizligi.mp4) | Savol-javob | 19.2 s | Instagram akkaunt xavfsizmi? |
 | 050 | [050-birinchi-javob.mp4](050-birinchi-javob.mp4) | Hikoya | 23.0 s | Birinchi javob ko'p narsani hal qiladi |
+| 051 | [051-oquv-markazi-sinov-darsi.mp4](051-oquv-markazi-sinov-darsi.mp4) | Suhbat namunasi | 23.1 s | O'quv markazi: kurs va sinov darsi |
+| 052 | [052-tugilgan-kun-tabrik.mp4](052-tugilgan-kun-tabrik.mp4) | Jarayon sxemasi | 16.4 s | Mijozni tug'ilgan kuni bilan avtomatik tabriklash |
+| 053 | [053-takroriy-savol-vs-bot.mp4](053-takroriy-savol-vs-bot.mp4) | Taqqoslash | 20.2 s | Bir xil savolga qayta-qayta javob berish |
+| 054 | [054-kichik-biznes-4-avtomatlashtirish.mp4](054-kichik-biznes-4-avtomatlashtirish.mp4) | Ro'yxat | 20.8 s | Kichik biznes uchun 4 ta avtomatlashtirish |
+| 055 | [055-jadval-3-qadam.mp4](055-jadval-3-qadam.mp4) | Qadamlar | 18.2 s | Buyurtma jadvalini 3 qadamda sozlash |
+| 056 | [056-erta-tong.mp4](056-erta-tong.mp4) | Soat bo'yicha hikoya | 22.2 s | Erta tong: kim yozadi |
+| 057 | [057-tungi-xabarlar.mp4](057-tungi-xabarlar.mp4) | Misol hisob | 20.0 s | Tungi xabarlar soni (misol) |
+| 058 | [058-haftalik-tekshiruv.mp4](058-haftalik-tekshiruv.mp4) | Chek-list | 20.4 s | Bot uchun haftalik tekshiruv |
+| 059 | [059-bot-ozbek-tilida.mp4](059-bot-ozbek-tilida.mp4) | Savol-javob | 18.6 s | Bot o'zbek tilida yozadimi? |
+| 060 | [060-bir-xabar-bir-mijoz.mp4](060-bir-xabar-bir-mijoz.mp4) | Hikoya | 22.1 s | Bir xabar, bir mijoz |
 
 Qayta render qilish: `reel/README.md` ga qarang.
