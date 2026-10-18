@@ -36,5 +36,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 028 | [028-botdan-oldin-tayyorlang.mp4](028-botdan-oldin-tayyorlang.mp4) | Chek-list | 22.9 s | Botdan oldin nimalarni tayyorlash kerak |
 | 029 | [029-bot-qimmatmi.mp4](029-bot-qimmatmi.mp4) | Savol-javob | 19.2 s | Bot qimmatmi? |
 | 030 | [030-javob-kech-boldi.mp4](030-javob-kech-boldi.mp4) | Hikoya | 23.9 s | Javob kech bo'ldi |
+| 031 | [031-salon-yozilish.mp4](031-salon-yozilish.mp4) | Suhbat namunasi | 22.9 s | Go'zallik saloni: yozilish boti |
+| 032 | [032-ombor-ogohlantirish.mp4](032-ombor-ogohlantirish.mp4) | Jarayon sxemasi | 16.4 s | Tovar tugashidan oldin ogohlantirish |
+| 033 | [033-eslatma-qongiroq-vs-xabar.mp4](033-eslatma-qongiroq-vs-xabar.mp4) | Taqqoslash | 20.2 s | Eslatish: qo'ng'iroq yoki avtomatik xabar |
+| 034 | [034-dm-3-xato.mp4](034-dm-3-xato.mp4) | Ro'yxat | 18.6 s | Instagram DM'da 3 ta keng tarqalgan xato |
+| 035 | [035-botni-sinash-4-qadam.mp4](035-botni-sinash-4-qadam.mp4) | Qadamlar | 19.7 s | Botni ishga tushirishdan oldin sinash |
+| 036 | [036-yakshanba-ertalab.mp4](036-yakshanba-ertalab.mp4) | Soat bo'yicha hikoya | 22.0 s | Yakshanba ertalab: dam olish kuni |
+| 037 | [037-hisobot-vaqti.mp4](037-hisobot-vaqti.mp4) | Misol hisob | 22.0 s | Hisobot tayyorlashga ketadigan vaqt (misol) |
+| 038 | [038-sizga-bot-kerakmi.mp4](038-sizga-bot-kerakmi.mp4) | Chek-list | 20.5 s | Sizga bot kerakligini bildiruvchi belgilar |
+| 039 | [039-kichik-biznesga-kerakmi.mp4](039-kichik-biznesga-kerakmi.mp4) | Savol-javob | 18.6 s | Kichik biznesga ham bot kerakmi? |
+| 040 | [040-yakshanba-dasturxon.mp4](040-yakshanba-dasturxon.mp4) | Hikoya | 21.7 s | Yakshanba, oila dasturxoni |
 
 Qayta render qilish: `reel/README.md` ga qarang.
