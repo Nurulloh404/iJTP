@@ -96,5 +96,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 088 | [088-yomon-sozlangan-bot-belgilari.mp4](088-yomon-sozlangan-bot-belgilari.mp4) | Chek-list | 20.8 s | Bot yomon sozlanganining belgilari |
 | 089 | [089-mijozlar-malumoti-xavfsizmi.mp4](089-mijozlar-malumoti-xavfsizmi.mp4) | Savol-javob | 18.5 s | Mijozlar ma'lumoti xavfsizmi? |
 | 090 | [090-uxlamaydigan-sotuvchi.mp4](090-uxlamaydigan-sotuvchi.mp4) | Hikoya | 21.1 s | Eng yaxshi sotuvchi uxlamaydi |
+| 091 | [091-fitnes-sinov-mashgulot.mp4](091-fitnes-sinov-mashgulot.mp4) | Suhbat namunasi | 23.7 s | Fitnes zal: sinov mashg'ulotiga yozilish |
+| 092 | [092-lid-saralash.mp4](092-lid-saralash.mp4) | Jarayon sxemasi | 16.4 s | Jiddiy mijozni bot ajratadi |
+| 093 | [093-mijozlar-bazasi-telefon-vs-jadval.mp4](093-mijozlar-bazasi-telefon-vs-jadval.mp4) | Taqqoslash | 20.2 s | Mijozlar bazasi: telefon yoki jadval |
+| 094 | [094-mijoz-qaytishi-3-narsa.mp4](094-mijoz-qaytishi-3-narsa.mp4) | Ro'yxat | 18.0 s | Mijoz qaytishi uchun 3 narsa |
+| 095 | [095-konsultatsiyada-nima-bolad.mp4](095-konsultatsiyada-nima-bolad.mp4) | Qadamlar | 18.4 s | Bepul konsultatsiyada nima bo'ladi |
+| 096 | [096-buyurtma-yolda.mp4](096-buyurtma-yolda.mp4) | Soat bo'yicha hikoya | 21.8 s | Buyurtma holati o'zi yangilanadi |
+| 097 | [097-kuniga-1-soat-yilda.mp4](097-kuniga-1-soat-yilda.mp4) | Misol hisob | 22.0 s | Kuniga 1 soat takroriy ish, yilda necha soat |
+| 098 | [098-instagram-profil-tekshiruvi.mp4](098-instagram-profil-tekshiruvi.mp4) | Chek-list | 20.1 s | Bot ulashdan oldin Instagram profilni tekshiring |
+| 099 | [099-dasturlashni-bilishim-kerakmi.mp4](099-dasturlashni-bilishim-kerakmi.mp4) | Savol-javob | 18.4 s | Dasturlashni bilishim kerakmi? |
+| 100 | [100-bugun-boshlang.mp4](100-bugun-boshlang.mp4) | Hikoya | 22.8 s | Bugun boshlang |
 
 Qayta render qilish: `reel/README.md` ga qarang.
