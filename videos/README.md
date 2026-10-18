@@ -46,5 +46,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 038 | [038-sizga-bot-kerakmi.mp4](038-sizga-bot-kerakmi.mp4) | Chek-list | 20.5 s | Sizga bot kerakligini bildiruvchi belgilar |
 | 039 | [039-kichik-biznesga-kerakmi.mp4](039-kichik-biznesga-kerakmi.mp4) | Savol-javob | 18.6 s | Kichik biznesga ham bot kerakmi? |
 | 040 | [040-yakshanba-dasturxon.mp4](040-yakshanba-dasturxon.mp4) | Hikoya | 21.7 s | Yakshanba, oila dasturxoni |
+| 041 | [041-klinika-qabul.mp4](041-klinika-qabul.mp4) | Suhbat namunasi | 22.4 s | Stomatologiya: qabulga yozish boti |
+| 042 | [042-tolov-chek-hisobot.mp4](042-tolov-chek-hisobot.mp4) | Jarayon sxemasi | 16.4 s | To'lov kelganda hammasi o'zi yoziladi |
+| 043 | [043-hisobot-qolda-vs-avto.mp4](043-hisobot-qolda-vs-avto.mp4) | Taqqoslash | 20.2 s | Hisobot: qo'lda yoki avtomatik |
+| 044 | [044-mijoz-dmda-nimani-sorayd.mp4](044-mijoz-dmda-nimani-sorayd.mp4) | Ro'yxat | 17.8 s | Mijoz DM'da nimani so'raydi |
+| 045 | [045-instagram-ulash-3-qadam.mp4](045-instagram-ulash-3-qadam.mp4) | Qadamlar | 18.5 s | Instagram'ni botga ulash 3 qadamda |
+| 046 | [046-siz-safardasiz.mp4](046-siz-safardasiz.mp4) | Soat bo'yicha hikoya | 22.1 s | Siz safardasiz, biznes ishlab turibdi |
+| 047 | [047-javobsiz-xabarlar-yillik.mp4](047-javobsiz-xabarlar-yillik.mp4) | Misol hisob | 22.0 s | Javobsiz qolgan xabarlar bir yilda (misol) |
+| 048 | [048-yaxshi-bot-javobi-belgilari.mp4](048-yaxshi-bot-javobi-belgilari.mp4) | Chek-list | 20.1 s | Yaxshi bot javobi qanday bo'ladi |
+| 049 | [049-instagram-akkaunt-xavfsizligi.mp4](049-instagram-akkaunt-xavfsizligi.mp4) | Savol-javob | 19.2 s | Instagram akkaunt xavfsizmi? |
+| 050 | [050-birinchi-javob.mp4](050-birinchi-javob.mp4) | Hikoya | 23.0 s | Birinchi javob ko'p narsani hal qiladi |
 
 Qayta render qilish: `reel/README.md` ga qarang.
