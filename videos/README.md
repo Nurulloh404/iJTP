@@ -86,5 +86,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 078 | [078-bot-zimmasiga-oladigan-ishlar.mp4](078-bot-zimmasiga-oladigan-ishlar.mp4) | Chek-list | 20.0 s | Bot zimmasiga oladigan ishlar |
 | 079 | [079-mijoz-bot-ekanini-biladimi.mp4](079-mijoz-bot-ekanini-biladimi.mp4) | Savol-javob | 19.1 s | Mijoz bot bilan gaplashayotganini biladimi? |
 | 080 | [080-bot-yordamchi.mp4](080-bot-yordamchi.mp4) | Hikoya | 22.5 s | Bot xodim emas, yordamchi |
+| 081 | [081-pitsa-buyurtma.mp4](081-pitsa-buyurtma.mp4) | Suhbat namunasi | 23.1 s | Pitsa: buyurtma qabul qilish boti |
+| 082 | [082-kunlik-hisobot-telegram.mp4](082-kunlik-hisobot-telegram.mp4) | Jarayon sxemasi | 16.4 s | Kunlik hisobot Telegram'ga o'zi keladi |
+| 083 | [083-javobsiz-izoh-vs-javobli.mp4](083-javobsiz-izoh-vs-javobli.mp4) | Taqqoslash | 20.2 s | Javobsiz izoh va javobli izoh |
+| 084 | [084-qayerdan-boshlash.mp4](084-qayerdan-boshlash.mp4) | Ro'yxat | 18.9 s | Avtomatlashtirishni qayerdan boshlash kerak |
+| 085 | [085-mijoz-yoli-4-qadam.mp4](085-mijoz-yoli-4-qadam.mp4) | Qadamlar | 19.8 s | Mijoz yo'li: ko'rdi, yozdi, buyurtma berdi, qaytdi |
+| 086 | [086-bir-kun-24-soat.mp4](086-bir-kun-24-soat.mp4) | Soat bo'yicha hikoya | 22.2 s | Bir kun, bir bot: 24 soat |
+| 087 | [087-mijoz-kutgan-vaqt.mp4](087-mijoz-kutgan-vaqt.mp4) | Misol hisob | 22.0 s | Mijoz 3 soat kutsa, bu necha soniya |
+| 088 | [088-yomon-sozlangan-bot-belgilari.mp4](088-yomon-sozlangan-bot-belgilari.mp4) | Chek-list | 20.8 s | Bot yomon sozlanganining belgilari |
+| 089 | [089-mijozlar-malumoti-xavfsizmi.mp4](089-mijozlar-malumoti-xavfsizmi.mp4) | Savol-javob | 18.5 s | Mijozlar ma'lumoti xavfsizmi? |
+| 090 | [090-uxlamaydigan-sotuvchi.mp4](090-uxlamaydigan-sotuvchi.mp4) | Hikoya | 21.1 s | Eng yaxshi sotuvchi uxlamaydi |
 
 Qayta render qilish: `reel/README.md` ga qarang.
