@@ -78,7 +78,7 @@ export const CLOCKS: Entry[] = [
         { time: "08:11", who: "b", text: "Yozib qo'ydim. Kutamiz!" },
         { time: "10:00", who: "o", text: "Bugungi yozuvlar ro'yxati" },
       ],
-      footer: "Dam olish, dam olish",
+      footer: "Dam olish kuni dam olasiz",
     },
   },
   {

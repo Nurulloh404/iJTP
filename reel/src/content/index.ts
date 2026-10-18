@@ -16,6 +16,16 @@ const GROUPS: Entry[][] = [CHAT, FLOW, VERSUS, LISTS, STEPS, CLOCKS, CALCS, CHEC
 const BGS: BgStyle[] = ['blobs', 'grid', 'rays', 'dots', 'stripes', 'rings'];
 const HOOKS: VideoSpec['hookStyle'][] = ['pop', 'rise', 'type', 'slam'];
 const TRANS: VideoSpec['transition'][] = ['fade', 'slide', 'wipe'];
+const CTAS = [
+  "Sizga ham shunday *yordamchi* kerakmi?",
+  "Bu *sizning* biznesingizga mos keladimi?",
+  "Qaysi ish vaqtingizni *yeyapti?*",
+  "Botni o'z biznesingizda *sinab ko'ring*",
+  "Mijoz *kutmasin.* Boshlaymizmi?",
+  "Sizda ham shunday *savol* bormi?",
+  "Takroriy ishni *botga* topshiring",
+  "Keling, birga *rejalashtiramiz*",
+];
 // Mavzu tartibi: ketma-ket videolar bir-biriga o'xshamasligi uchun qadam
 const THEME_ORDER = [0, 4, 1, 7, 2, 6, 3, 5];
 
@@ -29,6 +39,7 @@ export const VIDEOS: VideoSpec[] = (() => {
       if (!e) continue;
       out.push({
         ...e,
+        cta: e.cta ?? CTAS[(k * 3 + Math.floor(k / 8)) % CTAS.length],
         id: String(k + 1).padStart(3, '0'),
         theme: THEME_ORDER[(k + Math.floor(k / 8)) % THEME_ORDER.length],
         bg: BGS[(k * 5 + Math.floor(k / 6)) % BGS.length],
