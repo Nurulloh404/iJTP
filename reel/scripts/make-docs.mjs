@@ -20,8 +20,9 @@ for (const v of videos) {
   const dur = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path.join(outDir, file)]).toString().trim());
   const tags = [...new Set([...v.tags, ...BASE])].map((t) => '#' + t.toLowerCase().replace(/[^a-z0-9]/g, ''));
   const notes = [];
-  if (v.body.kind === 'chat') notes.push('Suhbat namuna sifatida ko\'rsatilgan.');
-  if (v.body.kind === 'calc') notes.push('Raqamlar misol uchun olingan, o\'zingizniki bilan almashtirib ko\'ring.');
+  const said = v.caption.join(' ').toLowerCase();
+  if (v.body.kind === 'chat' && !said.includes('namuna')) notes.push('Suhbat namuna sifatida ko\'rsatilgan.');
+  if (v.body.kind === 'calc' && !said.includes('misol uchun')) notes.push('Raqamlar misol uchun olingan, o\'zingizniki bilan almashtirib ko\'ring.');
   const text = [
     v.title,
     '',
