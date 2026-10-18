@@ -66,5 +66,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 058 | [058-haftalik-tekshiruv.mp4](058-haftalik-tekshiruv.mp4) | Chek-list | 20.4 s | Bot uchun haftalik tekshiruv |
 | 059 | [059-bot-ozbek-tilida.mp4](059-bot-ozbek-tilida.mp4) | Savol-javob | 18.6 s | Bot o'zbek tilida yozadimi? |
 | 060 | [060-bir-xabar-bir-mijoz.mp4](060-bir-xabar-bir-mijoz.mp4) | Hikoya | 22.1 s | Bir xabar, bir mijoz |
+| 061 | [061-avtoservis-navbat.mp4](061-avtoservis-navbat.mp4) | Suhbat namunasi | 22.6 s | Avtoservis: navbat olish boti |
+| 062 | [062-sharh-sorash.mp4](062-sharh-sorash.mp4) | Jarayon sxemasi | 16.4 s | Sharhlarni o'zi yig'adi |
+| 063 | [063-bot-yoq-vs-bot-bor-tun.mp4](063-bot-yoq-vs-bot-bor-tun.mp4) | Taqqoslash | 20.2 s | Tunda bot bor va bot yo'q |
+| 064 | [064-yaxshi-javob-3-belgi.mp4](064-yaxshi-javob-3-belgi.mp4) | Ro'yxat | 18.1 s | Yaxshi bot javobining 3 belgisi |
+| 065 | [065-telegram-xabarnoma-3-qadam.mp4](065-telegram-xabarnoma-3-qadam.mp4) | Qadamlar | 18.3 s | Telegram xabarnomani 3 qadamda sozlash |
+| 066 | [066-reklama-chiqqan-kun.mp4](066-reklama-chiqqan-kun.mp4) | Soat bo'yicha hikoya | 21.6 s | Reklama chiqqan kuni xabarlar ko'payadi |
+| 067 | [067-izohga-javob-vaqti.mp4](067-izohga-javob-vaqti.mp4) | Misol hisob | 22.0 s | Izohlarga javob berishga ketadigan vaqt (misol) |
+| 068 | [068-telegram-xabar-tarkibi.mp4](068-telegram-xabar-tarkibi.mp4) | Chek-list | 19.6 s | Egasiga Telegram xabarida nimalar bo'lsin |
+| 069 | [069-bot-qancha-vaqtda-tayyor.mp4](069-bot-qancha-vaqtda-tayyor.mp4) | Savol-javob | 19.7 s | Bot qancha vaqtda tayyor bo'ladi? |
+| 070 | [070-siz-operator-emassiz.mp4](070-siz-operator-emassiz.mp4) | Hikoya | 21.1 s | Siz operator emassiz |
 
 Qayta render qilish: `reel/README.md` ga qarang.
