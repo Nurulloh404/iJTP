@@ -26,5 +26,15 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 018 | [018-bot-nima-qilmasligi-kerak.mp4](018-bot-nima-qilmasligi-kerak.mp4) | Chek-list | 21.2 s | Bot hech qachon qilmasligi kerak bo'lgan ishlar |
 | 019 | [019-bot-xato-qilsa.mp4](019-bot-xato-qilsa.mp4) | Savol-javob | 19.7 s | Bot xato qilsa nima bo'ladi? |
 | 020 | [020-soat-uchda.mp4](020-soat-uchda.mp4) | Hikoya | 23.5 s | Soat 03:00 da bir xabar |
+| 021 | [021-kiyim-olcham-rang.mp4](021-kiyim-olcham-rang.mp4) | Suhbat namunasi | 22.5 s | Kiyim do'koni: o'lcham va rang so'rovi |
+| 022 | [022-izohlarga-avto-javob.mp4](022-izohlarga-avto-javob.mp4) | Jarayon sxemasi | 16.4 s | Instagram izohlariga avtomatik javob |
+| 023 | [023-daftar-vs-jadval.mp4](023-daftar-vs-jadval.mp4) | Taqqoslash | 20.2 s | Buyurtma daftarda yoki jadvalda |
+| 024 | [024-botdan-oldin-3-savol.mp4](024-botdan-oldin-3-savol.mp4) | Ro'yxat | 19.0 s | Bot yaratishdan oldin 3 savol |
+| 025 | [025-savollar-bazasi-3-qadam.mp4](025-savollar-bazasi-3-qadam.mp4) | Qadamlar | 18.2 s | Bot uchun savollar bazasi 3 qadamda |
+| 026 | [026-bayram-arafasi.mp4](026-bayram-arafasi.mp4) | Soat bo'yicha hikoya | 21.9 s | Bayram arafasida kech soatda buyurtma |
+| 027 | [027-eslatma-qongiroqlari-vaqti.mp4](027-eslatma-qongiroqlari-vaqti.mp4) | Misol hisob | 22.0 s | Eslatma qo'ng'iroqlariga ketadigan vaqt (misol) |
+| 028 | [028-botdan-oldin-tayyorlang.mp4](028-botdan-oldin-tayyorlang.mp4) | Chek-list | 22.9 s | Botdan oldin nimalarni tayyorlash kerak |
+| 029 | [029-bot-qimmatmi.mp4](029-bot-qimmatmi.mp4) | Savol-javob | 19.2 s | Bot qimmatmi? |
+| 030 | [030-javob-kech-boldi.mp4](030-javob-kech-boldi.mp4) | Hikoya | 23.9 s | Javob kech bo'ldi |
 
 Qayta render qilish: `reel/README.md` ga qarang.
