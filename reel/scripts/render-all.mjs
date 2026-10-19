@@ -39,7 +39,7 @@ for (const id of ids) {
     onProgress: ({ progress }) => { const p = Math.floor(progress * 10); if (p > last) { last = p; process.stdout.write(`${id}:${p * 10}% `); } },
   });
   // ovoz balandligini -16 LUFS ga keltiramiz (video oqimi nusxalanadi)
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', tmp, '-c:v', 'copy', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '128k', '-ar', '44100', '-movflags', '+faststart', file]);
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', tmp, '-c:v', 'copy', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11,alimiter=limit=0.7:level=false:attack=5:release=60', '-c:a', 'aac', '-b:a', '160k', '-ar', '44100', '-movflags', '+faststart', file]);
   rmSync(tmp, { force: true });
   const mb = (statSync(file).size / 1048576).toFixed(1);
   console.log(`\n${id} ${v.slug} ${(comp.durationInFrames / 30).toFixed(1)}s ${mb}MB render=${((Date.now() - t0) / 1000).toFixed(0)}s`);
