@@ -28,6 +28,10 @@ if (args.includes('--check')) {
   const extra = Object.keys(SCRIPT).filter((k) => !VIDEOS.some((v) => v.slug === k));
   console.log(`Tekshirildi: ${VIDEOS.length} video, xato ${bad}, ortiqcha slug ${extra.length} ${extra.join(',')}, jami belgi ${chars} (~${Math.round(chars / VIDEOS.length)} / video)`);
   process.exit(bad ? 1 : 0);
+} else if (args.includes('--group')) {
+  // --group 014,015,016 : bitta so'rov uchun birlashtirilgan prompt (videolar [long pause] bilan ajratilgan)
+  const ids = args[args.indexOf('--group') + 1].split(',');
+  console.log(ids.map((id) => promptFor(VIDEOS.find((v) => v.id === id))).join(' [long pause] '));
 } else if (args.includes('--write') || args.includes('--missing')) {
   // --write: voice/prompts.txt (hammasi); --missing: ovozi hali yo'q videolarning promptlari (stdout)
   const have = JSON.parse(readFileSync(path.resolve(import.meta.dirname, '../src/content/voice-data.json'), 'utf8'));
