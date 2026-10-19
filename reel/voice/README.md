@@ -18,3 +18,21 @@
    node scripts/render-all.mjs --ids 014,015 --force # ovozli versiya
    ```
 `voice-ingest` har bir faylda aynan kerakli sonli pauza (`[pause]`) topilmasa xato beradi; shunda o'sha videoni qayta generatsiya qiling.
+
+## Holat
+
+- Ovozi tayyor: **001-042** (42 ta video).
+- Ovozi yo'q: **043-100** (58 ta video, taxminan 18 300 kredit kerak).
+  ElevenLabs ulangan ish maydonining kvotasi (10 000 kredit) tugagan ("exceeds your quota of 10000, 194 credits remaining"),
+  shuning uchun qolgan videolar uchun generatsiya to'xtatilgan.
+
+Bir nechta videoni bitta so'rovda yaratish mumkin (kredit sarfi bir xil, so'rovlar kam):
+
+```bash
+node scripts/voice-prompts.mjs --group 043,044,045,046,047,048   # birlashtirilgan prompt ([long pause] bilan)
+# ElevenLabs'da yarating, mp3 ni yuklab oling, so'ng:
+node scripts/voice-split.mjs g043.mp3 043,044,045,046,047,048 ./raw   # video bo'yicha kesadi
+for id in 043 044 045 046 047 048; do node scripts/voice-prep.mjs $id ./raw/split/$id.mp3; done
+node scripts/render-all.mjs --ids 043,044,045,046,047,048 --force
+```
+`scripts/voice-group.sh` yuklab olish, kesish va qayta ishlashni birlashtiradi.
