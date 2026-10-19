@@ -6,9 +6,17 @@ import { balanceLine, parseRich, usePop } from '../lib/anim';
 import { Sfx } from '../lib/Sfx';
 import { grad, onAccent } from '../lib/ui';
 import type { StoryT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const dwell = (text: string) => Math.round(Math.max(66, 42 + text.replace(/[\n*]/g, '').length * 1.55));
-export const storyTimes = (b: StoryT) => {
+export const storyTimes = (b: StoryT, tm?: Timing) => {
+  if (tm) {
+    const out = b.lines.map((_, i) => {
+      const next = i + 1 < b.lines.length ? tm.start[i + 1] : tm.total;
+      return { at: tm.start[i], len: next - tm.start[i] };
+    });
+    return { out, end: tm.total };
+  }
   let at = 6;
   const out = b.lines.map((l) => {
     const a = at;
@@ -19,7 +27,7 @@ export const storyTimes = (b: StoryT) => {
   lastItem.len += 56; // oxirgi jumla sahna oxirigacha ko'rinib turadi
   return { out, end: at + 56 };
 };
-export const storyDuration = (b: StoryT) => storyTimes(b).end;
+export const storyDuration = (b: StoryT, tm?: Timing) => storyTimes(b, tm).end;
 
 const Line: React.FC<{ theme: Theme; text: string; style: 'big' | 'quiet' | 'accent'; len: number; last: boolean }> = ({ theme, text, style, len, last }) => {
   const frame = useCurrentFrame();
@@ -50,8 +58,8 @@ const Line: React.FC<{ theme: Theme; text: string; style: 'big' | 'quiet' | 'acc
   );
 };
 
-export const Story: React.FC<{ theme: Theme; b: StoryT }> = ({ theme, b }) => {
-  const tm = storyTimes(b);
+export const Story: React.FC<{ theme: Theme; b: StoryT; timing?: Timing }> = ({ theme, b, timing }) => {
+  const tm = storyTimes(b, timing);
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{ fontFamily: FONT }}>

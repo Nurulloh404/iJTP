@@ -5,9 +5,11 @@ import { usePop, useSoft } from '../lib/anim';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { ListT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 export const itemGap = (t: string, d?: string) => Math.round(Math.min(96, 46 + (t.length + (d?.length ?? 0)) * 0.55));
-export const listTimes = (items: { t: string; d?: string }[]) => {
+export const listTimes = (items: { t: string; d?: string }[], tm?: Timing) => {
+  if (tm) return { out: tm.start, end: tm.start[tm.start.length - 1] + 60 };
   let at = 30;
   const out: number[] = [];
   items.forEach((it) => {
@@ -16,10 +18,10 @@ export const listTimes = (items: { t: string; d?: string }[]) => {
   });
   return { out, end: at };
 };
-export const listDuration = (b: ListT) => listTimes(b.items).end + (b.footer ? 120 : 80);
+export const listDuration = (b: ListT, tm?: Timing) => (tm ? tm.total : listTimes(b.items).end + (b.footer ? 120 : 80));
 
-export const List: React.FC<{ theme: Theme; b: ListT }> = ({ theme, b }) => {
-  const tm = listTimes(b.items);
+export const List: React.FC<{ theme: Theme; b: ListT; timing?: Timing }> = ({ theme, b, timing }) => {
+  const tm = listTimes(b.items, timing);
   const h = useSoft(0, 16);
   const fp = usePop(tm.end + 6, 12, 140);
   const n = b.items.length;

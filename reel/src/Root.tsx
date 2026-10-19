@@ -12,7 +12,7 @@ export const Root: React.FC = () => (
     height={H}
     fps={FPS}
     durationInFrames={600}
-    defaultProps={{ id: VIDEOS[0].id, guard: false }}
-    calculateMetadata={({ props }) => ({ durationInFrames: totalFrames(getVideo(props.id)) })}
+    defaultProps={{ id: VIDEOS[0].id, guard: false, novoice: false }}
+    calculateMetadata={({ props }) => ({ durationInFrames: totalFrames(getVideo(props.id), props.novoice) })}
   />
 );

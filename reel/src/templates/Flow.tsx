@@ -6,11 +6,12 @@ import { Icon } from '../lib/Icon';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { FlowT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const STEP = 36;
-export const flowDuration = (b: FlowT) => 20 + b.nodes.length * STEP + (b.footer ? 130 : 90);
+export const flowDuration = (b: FlowT, tm?: Timing) => (tm ? tm.total : 20 + b.nodes.length * STEP + (b.footer ? 130 : 90));
 
-export const Flow: React.FC<{ theme: Theme; b: FlowT }> = ({ theme, b }) => {
+export const Flow: React.FC<{ theme: Theme; b: FlowT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
   const n = b.nodes.length;
   const nodeH = n <= 3 ? 230 : n === 4 ? 200 : 168;
@@ -18,7 +19,8 @@ export const Flow: React.FC<{ theme: Theme; b: FlowT }> = ({ theme, b }) => {
   const total = n * nodeH + (n - 1) * gap;
   const top = 300 + Math.max(0, (1050 - total) / 2);
   const railX = 60 + 36 + 56;
-  const done = 20 + n * STEP;
+  const nodeAt = (i: number) => (timing ? timing.start[i] : 20 + i * STEP);
+  const done = timing ? timing.start[n - 1] + STEP : 20 + n * STEP;
   const footP = usePop(done + 10, 12, 140);
   // paket aylanib yuradi
   const cyc = 70;
@@ -29,7 +31,7 @@ export const Flow: React.FC<{ theme: Theme; b: FlowT }> = ({ theme, b }) => {
     <AbsoluteFill style={{ fontFamily: FONT }}>
       {b.nodes.slice(0, -1).map((_, i) => {
         const y0 = top + i * (nodeH + gap) + nodeH;
-        const start = 20 + i * STEP + 18;
+        const start = nodeAt(i) + 18;
         const fill = clamp01((frame - start) / 22);
         return (
           <div key={i} style={{ position: 'absolute', left: railX - 4, top: y0 - 2, width: 8, height: gap + 4, borderRadius: 4, background: theme.line, overflow: 'hidden' }}>
@@ -38,7 +40,7 @@ export const Flow: React.FC<{ theme: Theme; b: FlowT }> = ({ theme, b }) => {
         );
       })}
       {b.nodes.map((nd, i) => {
-        const at = 20 + i * STEP;
+        const at = nodeAt(i);
         const p = usePop(at, 13, 150);
         const last = i === n - 1;
         return (
@@ -63,7 +65,7 @@ export const Flow: React.FC<{ theme: Theme; b: FlowT }> = ({ theme, b }) => {
         </div>
       )}
       {b.nodes.map((_, i) => (
-        <Sfx key={i} name="pop" at={20 + i * STEP} volume={0.4} />
+        <Sfx key={i} name="pop" at={nodeAt(i)} volume={0.4} />
       ))}
       <Sfx name="success" at={done + 10} volume={0.4} />
     </AbsoluteFill>

@@ -5,6 +5,7 @@ import { usePop, useSoft } from '../lib/anim';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { CalcT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const FSTEP = 62;
 export const calcValue = (b: CalcT) => b.factors.reduce((a, f) => a * f.value, 1) / b.resultDiv;
@@ -13,13 +14,14 @@ export const fmt = (n: number) => {
   const s = Number.isInteger(r) ? String(r) : String(r).replace('.', ',');
   return s.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 };
-export const calcDuration = (b: CalcT) => 26 + b.factors.length * FSTEP + 70 + 150 + (b.footer ? 30 : 0);
+export const calcDuration = (b: CalcT, tm?: Timing) => (tm ? tm.total : 26 + b.factors.length * FSTEP + 70 + 150 + (b.footer ? 30 : 0));
 
-export const Calc: React.FC<{ theme: Theme; b: CalcT }> = ({ theme, b }) => {
+export const Calc: React.FC<{ theme: Theme; b: CalcT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
   const n = b.factors.length;
   const h = useSoft(0, 16);
-  const resAt = 26 + n * FSTEP + 14;
+  const factorAt = (i: number) => (timing ? timing.start[i] : 26 + i * FSTEP);
+  const resAt = timing ? timing.start[n] : 26 + n * FSTEP + 14;
   const rp = usePop(resAt, 12, 120);
   const count = interpolate(frame, [resAt + 6, resAt + 56], [0, calcValue(b)], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
   const fp = usePop(resAt + 70, 12, 140);
@@ -29,7 +31,7 @@ export const Calc: React.FC<{ theme: Theme; b: CalcT }> = ({ theme, b }) => {
     <AbsoluteFill style={{ fontFamily: FONT }}>
       <div style={{ position: 'absolute', left: 60, width: 960, top: 255, textAlign: 'center', fontSize: 52, fontWeight: 900, color: theme.text, opacity: h, lineHeight: 1.1 }}>{b.heading}</div>
       {b.factors.map((f, i) => {
-        const at = 26 + i * FSTEP;
+        const at = factorAt(i);
         const p = usePop(at, 13, 150);
         const v = interpolate(frame, [at + 4, at + 26], [0, f.value], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
         const top = 380 + i * (fH + opH);
@@ -59,7 +61,7 @@ export const Calc: React.FC<{ theme: Theme; b: CalcT }> = ({ theme, b }) => {
         </div>
       )}
       {b.factors.map((_, i) => (
-        <Sfx key={i} name="tick" at={26 + i * FSTEP} volume={0.5} />
+        <Sfx key={i} name="tick" at={factorAt(i)} volume={0.5} />
       ))}
       <Sfx name="whoosh" at={resAt} volume={0.35} />
       <Sfx name="ding" at={resAt + 52} volume={0.45} />

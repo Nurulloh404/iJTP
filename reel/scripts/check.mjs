@@ -16,13 +16,13 @@ const { serveUrl, browser } = await setup();
 const bad = [];
 const t0 = Date.now();
 for (const id of ids) {
-  const comp = await selectComposition({ serveUrl, id: 'Reel', inputProps: { id, guard: true }, puppeteerInstance: browser, browserExecutable: undefined });
+  const comp = await selectComposition({ serveUrl, id: 'Reel', inputProps: { id, guard: true, novoice: true }, puppeteerInstance: browser, browserExecutable: undefined });
   const HOOK = 96, TR = 10, CTA = 120;
   const body = comp.durationInFrames - HOOK - CTA + 2 * TR;
   const settled = HOOK + body - TR - 10;
   try {
-    await renderStill({ composition: comp, serveUrl, output: path.join(out, `${id}-body.jpg`), frame: settled, inputProps: { id, guard: true }, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 70 });
-    if (args.includes('--hook')) await renderStill({ composition: comp, serveUrl, output: path.join(out, `${id}-hook.jpg`), frame: 60, inputProps: { id, guard: false }, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 70 });
+    await renderStill({ composition: comp, serveUrl, output: path.join(out, `${id}-body.jpg`), frame: settled, inputProps: { id, guard: true, novoice: true }, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 70 });
+    if (args.includes('--hook')) await renderStill({ composition: comp, serveUrl, output: path.join(out, `${id}-hook.jpg`), frame: 60, inputProps: { id, guard: false, novoice: true }, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 70 });
     console.log(id, 'OK', (comp.durationInFrames / 30).toFixed(1) + 's');
   } catch (e) {
     const msg = String(e.message || e).split('\n').find((l) => l.includes('OVERFLOW')) || String(e.message || e).slice(0, 300);

@@ -6,6 +6,7 @@ import { Icon } from '../lib/Icon';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { ClockT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const toMin = (s: string) => {
   const [h, m] = s.split(':').map(Number);
@@ -25,7 +26,8 @@ const mono = (events: ClockT['events']) => {
   });
 };
 const gapFor = (text: string) => Math.round(Math.min(96, 44 + text.length * 0.7));
-export const clockTimes = (b: ClockT) => {
+export const clockTimes = (b: ClockT, tm?: Timing) => {
+  if (tm) return { out: tm.start, end: tm.start[tm.start.length - 1] + 50 };
   let at = 34;
   const out = b.events.map((e) => {
     const a = at;
@@ -34,13 +36,13 @@ export const clockTimes = (b: ClockT) => {
   });
   return { out, end: at };
 };
-export const clockDuration = (b: ClockT) => clockTimes(b).end + (b.footer ? 120 : 76);
+export const clockDuration = (b: ClockT, tm?: Timing) => (tm ? tm.total : clockTimes(b).end + (b.footer ? 120 : 76));
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
-export const Clock: React.FC<{ theme: Theme; b: ClockT }> = ({ theme, b }) => {
+export const Clock: React.FC<{ theme: Theme; b: ClockT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
-  const tm = clockTimes(b);
+  const tm = clockTimes(b, timing);
   const mins = mono(b.events);
   const h = usePop(2, 14, 140);
   // joriy daqiqa: tadbir paydo bo'lishi bilan keyingi vaqtga siljiydi

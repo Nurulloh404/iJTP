@@ -5,18 +5,22 @@ import { usePop, useSoft } from '../lib/anim';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { FaqT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const A_START = 70;
 const CPF = 0.85; // kadrdagi belgi
-export const faqDuration = (b: FaqT) => A_START + Math.round(b.a.length / CPF) + (b.takeaway ? 150 : 90);
+export const faqDuration = (b: FaqT, tm?: Timing) => (tm ? tm.total : A_START + Math.round(b.a.length / CPF) + (b.takeaway ? 150 : 90));
 
-export const Faq: React.FC<{ theme: Theme; b: FaqT }> = ({ theme, b }) => {
+export const Faq: React.FC<{ theme: Theme; b: FaqT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
+  const aStart = timing ? timing.start[0] : A_START;
+  const cpf = timing ? b.a.length / Math.max(30, timing.dur[0] - 12) : CPF;
   const qp = usePop(4, 14, 140);
-  const ap = usePop(A_START - 12, 14, 150);
-  const typed = Math.max(0, Math.min(b.a.length, Math.floor((frame - A_START) * CPF)));
-  const endAt = A_START + Math.round(b.a.length / CPF);
-  const tp = usePop(endAt + 10, 12, 140);
+  const ap = usePop(aStart - 12, 14, 150);
+  const typed = Math.max(0, Math.min(b.a.length, Math.floor((frame - aStart) * cpf)));
+  const endAt = aStart + Math.round(b.a.length / cpf);
+  const takeAt = timing && timing.start[1] !== undefined ? timing.start[1] : endAt + 10;
+  const tp = usePop(takeAt, 12, 140);
   const shown = b.a.slice(0, typed);
   const rest = b.a.slice(typed);
   return (
@@ -31,7 +35,7 @@ export const Faq: React.FC<{ theme: Theme; b: FaqT }> = ({ theme, b }) => {
         <div style={{ marginTop: 28, fontSize: 46, fontWeight: 600, lineHeight: 1.28 }}>
           {shown}
           <span style={{ opacity: 0 }}>{rest}</span>
-          {typed < b.a.length && frame > A_START && <span style={{ position: 'absolute', marginLeft: 4, width: 6, height: 46, background: theme.accent, transform: 'translateY(6px)' }} />}
+          {typed < b.a.length && frame > aStart && <span style={{ position: 'absolute', marginLeft: 4, width: 6, height: 46, background: theme.accent, transform: 'translateY(6px)' }} />}
         </div>
       </div>
       {b.takeaway && (
@@ -40,9 +44,9 @@ export const Faq: React.FC<{ theme: Theme; b: FaqT }> = ({ theme, b }) => {
         </div>
       )}
       <Sfx name="pop" at={4} volume={0.45} />
-      <Sfx name="swipe" at={A_START - 12} volume={0.3} />
-      {Array.from({ length: Math.ceil(b.a.length / 6) }, (_, i) => (i % 2 === 0 ? <Sfx key={i} name="type" at={A_START + Math.round((i * 6) / CPF)} volume={0.14} /> : null))}
-      {b.takeaway && <Sfx name="ding" at={endAt + 10} volume={0.4} />}
+      <Sfx name="swipe" at={Math.max(0, aStart - 12)} volume={0.3} />
+      {Array.from({ length: Math.ceil(b.a.length / 6) }, (_, i) => (i % 2 === 0 ? <Sfx key={i} name="type" at={aStart + Math.round((i * 6) / cpf)} volume={0.14} /> : null))}
+      {b.takeaway && <Sfx name="ding" at={takeAt} volume={0.4} />}
     </AbsoluteFill>
   );
 };

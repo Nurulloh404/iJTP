@@ -1,0 +1,299 @@
+### 001 gul-dokoni-tungi-buyurtma
+Kechasi soat o'n bir nol to'rtda mijoz yozdi. Siz uxlayapsiz. [pause] Mijoz atirgul buketi haqida so'radi. [pause] Bot olti soniyada javob berdi va vaqtni so'radi. [pause] Mijoz vaqt va manzilni yozdi. [pause] Bot buyurtmani qabul qildi. [pause] Egasiga esa Telegramdan xabar bordi. [pause] Agar qiziqsangiz, izohda plyus belgisini qoldiring. Biznesingizga bepul konsultatsiya beramiz.
+
+### 002 buyurtma-jadval-telegram
+Buyurtma o'zi jadvalga tushadi. [pause] Mijoz Instagramda xabar yozadi. [pause] Sun'iy intellekt olti soniyada javob beradi. [pause] Buyurtma jadvalga yoziladi. [pause] Egasiga esa Telegramdan xabar boradi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 003 qolda-vs-bot
+Qo'lda yoki bot bilan? [pause] Qo'lda javob ertalab beriladi. Bot bilan esa darrov. [pause] Buyurtma daftarga emas, jadvalga o'zi yoziladi. [pause] Bir xil savolga qayta yozmaysiz, bot javobni biladi. [pause] Xabarlar o'tkazib yuborilmaydi, hech narsa yo'qolmaydi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 004 mijoz-yoqotish-3-sabab
+Mijoz nega ketib qoladi? [pause] Birinchi sabab: sekin javob. Mijoz kutmaydi, boshqa do'konga o'tadi. [pause] Ikkinchi: narx aytilmagan. Uni bilish uchun yana yozish kerak. [pause] Uchinchi: kechasi javob yo'q. Kech yozganlar ertalabgacha sovib qoladi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 005 bot-4-qadamda
+Bot to'rt qadamda ishga tushadi. [pause] Birinchi qadam: suhbat. Biznesingizni birga ko'rib chiqamiz. [pause] Ikkinchi: sozlash. Bot javoblari va jadvalni tayyorlaymiz. [pause] Uchinchi: sinov. Sizning ishtirokingizda tekshiramiz. [pause] To'rtinchi: ishga tushirish. Bot mijozlarga javob bera boshlaydi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 006 bir-kecha-bir-mijoz
+Siz uxladingiz. Bot sotdi. [pause] Kechasi soat o'n bir nol to'rtda mijoz narxni so'radi. [pause] Bot narx va mavjudligini aytdi. [pause] Buyurtma jadvalga yozildi. [pause] Egasiga Telegramdan xabar bordi. [pause] Ertalab soat sakkiz o'ttizda siz uyg'ondingiz, buyurtma tayyor. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 007 takroriy-savollar-vaqti
+Bir xil savolga qancha vaqt ketadi? [pause] Kuniga yigirmata takroriy savol. [pause] Har biriga ikki daqiqa. [pause] Oyiga yigirma olti ish kuni. [pause] Jami oyiga taxminan o'n yetti soat. Bu vaqtni savdoga sarflash mumkin. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 008 bot-nimalar-qiladi
+Bot nimalarni qila oladi? [pause] Narxni aytadi, savolga darrov javob beradi. [pause] Buyurtmani qabul qiladi, ism, manzil va vaqtni so'raydi. [pause] Jadvalga yozadi, qo'lda ko'chirish shart emas. [pause] Sizga Telegramdan xabar beradi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 009 bot-odamdek-gaplashadimi
+Bot odamdek gaplashadimi? [pause] Bot sizning narxlaringiz, manzilingiz va qoidalaringiz asosida yozadi. Murakkab savol bo'lsa, suhbatni sizga uzatadi. [pause] Qo'lni bo'shatadi, nazoratni emas. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 010 mijoz-kutmaydi
+Mijoz kutmaydi. [pause] Kechasi soat o'n bir nol to'rt. [pause] Mijoz yozdi. [pause] Siz uxlayapsiz. [pause] Ertalab javob berdingiz. Kech bo'ldi. [pause] Mijoz allaqachon boshqa joydan oldi. [pause] Bot esa olti soniyada javob beradi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 011 kofexona-stol-bron
+Kechqurun uchun stol kerak. Bot band qiladi. [pause] Mijoz bugun kechqurun to'rt kishiga stol so'radi. [pause] Bot bo'sh vaqtlarni aytdi. [pause] Mijoz kechki soat yettini tanladi. [pause] Bot stolni band qildi va ismni so'radi. [pause] Egasiga esa Telegramdan yangi bron haqida xabar bordi. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 012 yangi-mijoz-bazaga
+Yangi mijoz o'zi bazaga tushadi. [pause] Mijoz saytdagi formani to'ldiradi. [pause] Sun'iy intellekt ma'lumotni tekshiradi. [pause] Ariza jadvalga yoziladi. [pause] Menejerga Telegramdan xabar boradi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 013 javob-tezligi
+Javob tezligi: odam yoki bot? [pause] Band bo'lsangiz, javob kechikadi. Bot esa darrov javob beradi. [pause] Narx ro'yxati doim tayyor turadi. [pause] Kech javob mijozni yo'qotadi, bot esa vaqtida javob beradi. [pause] Charchaganingizda xato bo'lishi mumkin, bot har safar bir xil yozadi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 014 5-takroriy-ish
+Beshta ish. Bot qiladi. [pause] Birinchi: narxni aytish. [pause] Ikkinchi: manzil va ish vaqtini aytish. [pause] Uchinchi: buyurtma qabul qilish. [pause] To'rtinchi: eslatma yuborish. [pause] Beshinchi: hisobot tayyorlash. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 015 buyurtma-5-qadamda
+Buyurtma besh qadamda. [pause] Mijoz yozadi. [pause] Bot narx va mavjudlikni aytadi. [pause] Buyurtma yig'iladi: ism, manzil, vaqt. [pause] Hammasi jadvalga yoziladi. [pause] Va sizga Telegramdan xabar keladi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 016 tushlik-payti
+Siz tushlik qilyapsiz. Bot ishda. [pause] Tushlik payti mijoz ertaga yetkazib berishni so'radi. [pause] Bot shahar bo'yicha yetkazishni tasdiqladi. [pause] Manzil va vaqtni so'radi. [pause] Buyurtmani jadvalga yozdi. [pause] Egasiga xabar yubordi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 017 buyurtma-yozish-vaqti
+Buyurtmani qo'lda yozish qancha vaqt oladi? [pause] Kuniga o'n beshta buyurtma. [pause] Har birini yozishga uch daqiqa. [pause] Oyiga o'ttiz kun. [pause] Jami oyiga yigirma ikki yarim soat. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 018 bot-nima-qilmasligi-kerak
+Botga taqiq bo'lgan ishlar. [pause] Narxni o'ylab topmasligi kerak. Faqat sizning narxlaringiz. [pause] Va'da bermasligi kerak. Muddat va chegirmani siz belgilaysiz. [pause] Bahslashmasligi kerak. Murakkab holat sizga uzatiladi. [pause] Bilmagan narsani aytmasligi kerak. U aniqlab javob beraman, deydi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 019 bot-xato-qilsa
+Bot xato qilsa-chi? [pause] Bot faqat sizning ma'lumotlaringizga tayanadi. Bilmagan savolni o'ylab topmaydi, suhbatni sizga uzatadi. Xatolar birinchi haftada birga tuzatiladi. [pause] Xato topiladi va tuzatiladi. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 020 soat-uchda
+Soat uchda. [pause] Soat tunda uch. [pause] Egasi uxlayapti. [pause] Bir mijoz savol yozdi. [pause] Narxi qancha? [pause] Bot olti soniyada javob berdi. [pause] Ertalab buyurtma sizni kutadi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 021 kiyim-olcham-rang
+O'lcham haqida savol. Javob darrov. [pause] Mijoz ko'ylak o'lchamini so'radi. [pause] Bot mavjud o'lcham va ranglarni aytdi. [pause] Mijoz qora rangni tanlab, yetkazib berishni so'radi. [pause] Bot manzilni so'radi. [pause] Egasiga yangi buyurtma haqida xabar bordi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 022 izohlarga-avto-javob
+Izohlarga ham bot javob beradi. [pause] Postga yangi izoh yoziladi. [pause] Sun'iy intellekt mos javob tayyorlaydi. [pause] Spam va haqoratli izohlar saralanadi. [pause] Javob joylanadi, mijoz e'tibor ko'radi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 023 daftar-vs-jadval
+Daftar yoki jadval? [pause] Daftarga qo'lda yozasiz, jadvalga esa o'zi yoziladi. [pause] Jadvalda mijoz yozgani aynan saqlanadi. [pause] Qidirish uzoq vaqt oladi, filtr esa bir lahzada topadi. [pause] Daftar yo'qolishi mumkin, jadval esa hamma narsani saqlaydi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 024 botdan-oldin-3-savol
+Bot yaratishdan oldin uchta savol. [pause] Birinchi: mijoz nimani so'raydi? Eng ko'p savollarni yozib chiqing. [pause] Ikkinchi: javob qanday bo'lsin? Qisqa, aniq va do'stona. [pause] Uchinchi: keyin nima bo'ladi? Buyurtma kimga va qayerga tushadi? [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 025 savollar-bazasi-3-qadam
+Bot qanday o'rganadi? [pause] Birinchi: mijozlar ko'p so'raydigan savollarni yig'amiz. [pause] Ikkinchi: har savolga qisqa javob yozamiz. [pause] Uchinchi: narx va ma'lumotlarni tekshiramiz. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 026 bayram-arafasi
+Bayram arafasi. Siz oilangiz bilan. [pause] Kech kirganda mijoz bayramga tort so'radi. [pause] Bot qaysi turi kerakligini so'radi. [pause] Mijoz ikki kilogrammli shokoladli tortni tanladi. [pause] Buyurtma qabul qilindi. [pause] Konditerga xabar yuborildi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 027 eslatma-qongiroqlari-vaqti
+Eslatma qo'ng'iroqlari qancha vaqt oladi? [pause] Kuniga o'nta qo'ng'iroq. [pause] Har biri ikki daqiqa. [pause] Oyiga yigirma olti ish kuni. [pause] Jami oyiga taxminan to'qqiz soat. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 028 botdan-oldin-tayyorlang
+Botdan oldin nimalar kerak? [pause] Narxlar ro'yxati. [pause] Ish vaqti va manzil. [pause] Ko'p so'raladigan savollar. O'ntasi ham yetarli. [pause] Buyurtma qoidalari. [pause] Va murakkab holat uchun bog'lanish yo'li. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 029 bot-qimmatmi
+Bot qimmatmi? [pause] Narx loyiha hajmiga bog'liq: nechta kanal, jadval va Telegram ulanishi. Aniq narxni konsultatsiyada hisoblaymiz. Konsultatsiya bepul. [pause] Konsultatsiya bepul. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 030 javob-kech-boldi
+Javob kech bo'ldi. [pause] Mijoz kechasi soat o'n bir nol to'rtda yozdi. [pause] Siz ertalab ko'rdingiz. [pause] Javob berdingiz. [pause] U allaqachon boshqa joydan oldi. [pause] Bir xabar, bir mijoz. [pause] Bot kutmaydi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 031 salon-yozilish
+Salonga yozilish o'zi bo'ladi. [pause] Mijoz shanba kuniga soch kesishga yozilmoqchi. [pause] Bot bo'sh vaqtlarni ko'rsatdi. [pause] Mijoz kunduzgi soat ikkini tanladi. [pause] Bot yozib qo'ydi va bir kun oldin eslatishni aytdi. [pause] Salon egasiga yangi yozuv haqida xabar keldi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 032 ombor-ogohlantirish
+Tovar tugashidan oldin bilasiz. [pause] Sotuv tasdiqlanadi. [pause] Ombor jadvalida qoldiq kamayadi. [pause] Qoldiq chegaradan pastga tushadi. [pause] Egasiga Telegramdan ogohlantirish boradi. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 033 eslatma-qongiroq-vs-xabar
+Eslatma o'zi ketsa-chi? [pause] Har mijozga qo'ng'iroq qilmaysiz, xabar o'zi ketadi. [pause] Eslatish esdan chiqmaydi, har safar vaqtida boradi. [pause] Mijoz qulay vaqtda xabarga javob beradi. [pause] Sizning vaqtingiz bo'shaydi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 034 dm-3-xato
+Direktda uchta xato qilmang. [pause] Birinchi: salomsiz javob berish. [pause] Ikkinchi: juda uzun matn yozish. Qisqa javob tezroq o'qiladi. [pause] Uchinchi: keyingi qadamni aytmaslik. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 035 botni-sinash-4-qadam
+Ishga tushirishdan oldin sinov. [pause] Avval oddiy savol bering, masalan: narxi qancha? [pause] Keyin qiyin savol bering. Bot sizga uzatadimi? [pause] Buyurtma bering. U jadvalga tushdimi? [pause] Va Telegramga xabar kelganini tekshiring. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 036 yakshanba-ertalab
+Dam olish kuni. Telefon tinch. [pause] Yakshanba ertalab mijoz bugun ishlaysizlarmi, deb so'radi. [pause] Bot ish vaqtini aytdi. [pause] Mijoz soat o'n birda kelishini yozdi. [pause] Bot yozib qo'ydi. [pause] Soat o'nda egasiga bugungi yozuvlar ro'yxati keldi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 037 hisobot-vaqti
+Hisobot uchun qancha vaqt ketadi? [pause] Har kuni o'ttiz daqiqa. [pause] Haftasiga olti ish kuni. [pause] Oyiga to'rt hafta. [pause] Jami oyiga o'n ikki soat. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 038 sizga-bot-kerakmi
+Sizga bot kerakmi? [pause] Mijozlar kechasi yozadimi? [pause] Savollar takrorlanadimi? [pause] Buyurtmalar daftarda yoziladimi? [pause] Xabarlar ko'payib, hammasiga ulgurmayapsizmi? Unda bot foyda beradi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 039 kichik-biznesga-kerakmi
+Kichik biznesga ham kerakmi? [pause] Agar bir xil savollarga ko'p yozsangiz yoki kechasi xabarlar javobsiz qolsa, foydasi bor. Bunday bo'lmasa, shart emas. [pause] Avval ehtiyojni aniqlaymiz. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 040 yakshanba-dasturxon
+Dam olish kunida ish bormi? [pause] Yakshanba. Oila dasturxonda. [pause] Telefon jiringladi. [pause] Mijoz yozdi. [pause] Siz esa oilangiz bilan. [pause] Bot javob berdi. Buyurtma yozildi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 041 klinika-qabul
+Bemor kutmaydi. Bot javob beradi. [pause] Bemor tish og'rig'i bilan yozdi. [pause] Bot bugungi bo'sh vaqtni aytdi. [pause] Bemor shu vaqtni tanladi. [pause] Bot yozib qo'ydi va ismni so'radi. [pause] Shifokorga shoshilinch qabul haqida xabar ketdi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 042 tolov-chek-hisobot
+To'lov keldi. Hammasi yozildi. [pause] Mijoz to'lov qiladi. [pause] Chek jadvalga yoziladi. [pause] Mijozga to'lov qabul qilingani haqida xabar boradi. [pause] Kunlik jami hisobot yangilanadi. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 043 hisobot-qolda-vs-avto
+Hisobotni kim tayyorlaydi? [pause] Kechqurun o'zingiz hisoblamaysiz, hisobot tayyor keladi. [pause] Raqamlar jadvaldan aniq olinadi. [pause] Hamma narsa telefon va daftarda emas, bir joyda. [pause] Hisobotni haftada bir emas, har kuni ko'rasiz. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 044 mijoz-dmda-nimani-sorayd
+Mijoz direktda nimani so'raydi? [pause] Eng ko'p narxni so'raydi. [pause] Keyin mahsulot bor-yo'qligini so'raydi. [pause] Va yetkazib berish qachon va qanday bo'lishini so'raydi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 045 instagram-ulash-3-qadam
+Instagramni botga ulash. [pause] Birinchi: profilni biznes rejimiga o'tkazing. [pause] Ikkinchi: bot xabarlarni ko'rishi uchun ruxsat bering. [pause] Uchinchi: sinov xabari yuborib, javobni tekshiramiz. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 046 siz-safardasiz
+Siz havoda. Biznes yerda. [pause] Siz samolyotdasiz, mijoz esa narxlar ro'yxatini so'radi. [pause] Bot ro'yxatni yubordi. [pause] Mijoz ikkita buyurtma bermoqchi bo'ldi. [pause] Bot buyurtmani jadvalga yozdi. [pause] Qo'nganingizdan keyin hammasini ko'rasiz. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 047 javobsiz-xabarlar-yillik
+Javobsiz xabar yo'qolgan imkoniyatdir. [pause] Kuniga uchta javobsiz xabar. [pause] Oyiga o'ttiz kun. [pause] Yilda o'n ikki oy. [pause] Jami yilda bir ming sakson ta xabar. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 048 yaxshi-bot-javobi-belgilari
+Yaxshi bot javobi qanday bo'ladi? [pause] U salom bilan boshlanadi. [pause] U qisqa bo'ladi. [pause] U aniq bo'ladi. [pause] Va keyingi qadamni aytadi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 049 instagram-akkaunt-xavfsizligi
+Instagram akkauntim xavfsiz qoladimi? [pause] Bot rasmiy ulanish orqali ishlashi kerak. Qaysi usul ishlatilishini va qanday ruxsat so'ralishini konsultatsiyada ochiq tushuntiramiz. [pause] Xavfsizlik birinchi savol. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 050 birinchi-javob
+Birinchi javob hal qiladi. [pause] Mijoz bir nechta do'konga yozdi. [pause] Ko'pincha birinchi javob bergan yutadi. [pause] Sekin javob, sovigan qiziqish. [pause] Tez javob, ishonch. [pause] Bot doim birinchi bo'ladi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 051 oquv-markazi-sinov-darsi
+Kurs haqida savol. Olti soniyada javob. [pause] Mijoz ingliz tili kursi haqida so'radi. [pause] Bot yangi guruh dushanba kuni boshlanishini aytdi. [pause] Mijoz sinov darsi bor-yo'qligini so'radi. [pause] Bot sinov darsiga yozishni taklif qildi. [pause] Mijoz seshanbani tanladi. [pause] Markazga sinov darsi haqida xabar bordi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 052 tugilgan-kun-tabrik
+Mijozni tabriklashni bot eslaydi. [pause] Tug'ilgan kunlar mijozlar bazasida saqlanadi. [pause] Har tong bugun kimning bayrami ekani tekshiriladi. [pause] Sun'iy intellekt ismi bilan tabrik yozadi. [pause] Tabrik sovg'a taklifi bilan yuboriladi. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 053 takroriy-savol-vs-bot
+Bir xil savol. Yuzinchi marta. [pause] Matnni qidirib yubormaysiz, bot o'zi yuboradi. [pause] Narx ro'yxati doim tayyor turadi. [pause] Manzilni qayta yozmaysiz, u avtomatik chiqadi. [pause] Siz bir xil gapdan charchamaysiz, yangi ishga o'tasiz. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 054 kichik-biznes-4-avtomatlashtirish
+To'rtta oddiy avtomatlashtirish. [pause] Direktga avtomatik javob. [pause] Buyurtmalar jadvali. [pause] Telegramga xabar. [pause] Va avtomatik eslatma. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 055 jadval-3-qadam
+Jadval o'zi to'ladi. [pause] Birinchi: ustunlarni belgilaymiz, ism, mahsulot, vaqt, manzil. [pause] Ikkinchi: botni jadvalga ulaymiz. [pause] Uchinchi: birinchi buyurtma qatorini tekshiramiz. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 056 erta-tong
+Tong soat besh ellikda. Kim yozadi? [pause] Erta tongda mijoz yetkazib berish bor-yo'qligini so'radi. [pause] Bot soat to'qqizdan boshlanishini aytdi. [pause] Mijoz o'z manziliga ham yetkazishni so'radi. [pause] Bot manzilni so'radi va tekshirishni boshladi. [pause] Siz uyg'ongach, hammasi tayyor turadi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 057 tungi-xabarlar
+Tungi xabarlar nechta bo'ladi? [pause] Kechasi to'rtta xabar kelsa. [pause] Oyiga o'ttiz kun. [pause] Jami oyiga bir yuz yigirma ta xabar. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 058 haftalik-tekshiruv
+Botni haftada bir tekshiring. [pause] Bot javoblarini o'qib chiqing. [pause] Yangi savollarni bazaga qo'shing. [pause] Jadvalda buyurtmalar to'liqligini ko'ring. [pause] Va narxlarni yangilang. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 059 bot-ozbek-tilida
+Bot o'zbek tilida yozadimi? [pause] Ha. Bot o'zbek va rus tilida javob bera oladi. Qaysi tilda yozishini va qanday ohangda gaplashishini siz belgilaysiz. [pause] Til va ohang sizniki. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 060 bir-xabar-bir-mijoz
+Bir xabar, bir mijoz. [pause] Har xabar, bir odam. [pause] Har javobsiz xabar, bir imkoniyat. [pause] Siz hammasiga ulgurmaysiz. [pause] Bot ulguradi. [pause] Siz esa muhim ishga vaqt topasiz. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 061 avtoservis-navbat
+Navbat o'zi yoziladi. [pause] Mijoz moy almashtirish uchun navbat so'radi. [pause] Bot mashina markasini so'radi. [pause] Mijoz markani yozdi. [pause] Bot ertangi bo'sh vaqtlarni taklif qildi. [pause] Mijoz ertalabki soat o'nni tanladi. [pause] Ustaxonaga yangi navbat haqida xabar bordi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 062 sharh-sorash
+Sharhlarni bot o'zi yig'adi. [pause] Buyurtma yetkazilgach belgilanadi. [pause] Bot bir kun kutadi, mijozni bezovta qilmaydi. [pause] Keyin qisqa sharh so'rovi yuboriladi. [pause] Baholar jadvalda bir joyda to'planadi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 063 bot-yoq-vs-bot-bor-tun
+Tunda nima o'zgaradi? [pause] Botsiz tungi xabar sovib qoladi. Bot bilan tunda ham javob bor. [pause] Ertalab xabarlar uyumi o'rniga buyurtmalar ro'yxatini ko'rasiz. [pause] Mijoz boshqa joyga ketmaydi, sizda qoladi. [pause] Siz esa tinch uxlaysiz. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 064 yaxshi-javob-3-belgi
+Yaxshi javobning uchta belgisi. [pause] Birinchisi: qisqa. Ikki-uch gap yetarli. [pause] Ikkinchisi: aniq. Savolga to'g'ri javob beradi. [pause] Uchinchisi: keyingi qadam bor, masalan: qaysi vaqt qulay? [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 065 telegram-xabarnoma-3-qadam
+Telegramga xabar kelsin. [pause] Birinchi: xabar qayerga kelishini tanlang, guruh yoki bot. [pause] Ikkinchi: xabarda nimalar ko'rinishini belgilang. [pause] Uchinchi: test buyurtma yuborib ko'ring. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 066 reklama-chiqqan-kun
+Reklama chiqdi. Xabarlar ko'p. [pause] Tushda reklama ishga tushdi. [pause] Mijoz narxni so'radi. [pause] Bot narx va mavjudlikni aytdi. [pause] Keyin ism va manzilni so'radi. [pause] Yangi buyurtmalar jadvalda paydo bo'ldi. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 067 izohga-javob-vaqti
+Izohga javob qancha vaqt oladi? [pause] Kuniga yigirma beshta izoh. [pause] Har biriga bir daqiqa. [pause] Oyiga o'ttiz kun. [pause] Jami oyiga o'n ikki yarim soat. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 068 telegram-xabar-tarkibi
+Egasiga xabarda nima yozilsin? [pause] Mijoz ismi. [pause] Buyurtma: nima va nechta. [pause] Vaqt va manzil. [pause] Va bog'lanish uchun telefon raqami. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 069 bot-qancha-vaqtda-tayyor
+Bot qancha vaqtda tayyor bo'ladi? [pause] Murakkablikka bog'liq. Oddiy javob beruvchi bot tezroq, jadval va Telegram ulansa biroz ko'proq vaqt ketadi. Aniq muddatni konsultatsiyada aytamiz. [pause] Muddatni oldindan kelishamiz. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 070 siz-operator-emassiz
+Siz operator emassiz. [pause] Siz biznes egasisiz. [pause] Kun bo'yi javob yozish sizning ishingiz emas. [pause] Strategiya. Mahsulot. Mijoz bilan munosabat. [pause] Takroriy javobni bot yozsin. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 071 buyurtmam-qayerda
+Buyurtmam qayerda? Bot biladi. [pause] Mijoz buyurtmasi qayerdaligini so'radi. [pause] Bot buyurtma raqamini so'radi. [pause] Mijoz raqamni yozdi. [pause] Bot buyurtma yo'lda ekanini aytdi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 072 bron-eslatma
+Eslatma o'zi ketadi. [pause] Mijoz vaqt band qiladi. [pause] Bir kun oldin bot eslatma yuboradi. [pause] Mijoz kelishini tasdiqlaydi. [pause] Jadvalda tasdiqlanganlar belgilanadi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 073 xodim-vs-bot-orgatish
+Xodimga ham, botga ham o'rgatiladi. [pause] Xodimga qoidani har safar tushuntirasiz. Botga esa bir marta yozasiz. [pause] Har kim boshqacha javob beradi, bot esa hammaga bir xil. [pause] Xodim dam oladi yoki kasal bo'ladi, bot doim ishda. [pause] Bilim bir odamda emas, tizimda saqlanadi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 074 telegram-xabar-3-foyda
+Telegram xabarning uchta foydasi. [pause] Birinchi: yangi buyurtmani darrov bilasiz. [pause] Ikkinchi: ism, mahsulot, vaqt va manzil bir joyda. [pause] Uchinchi: ofisda ham, yo'lda ham xabar olasiz. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 075 birinchi-hafta
+Bot ishga tushdi. Keyin nima? [pause] Birinchi kuni bot javoblarini o'qib chiqamiz. [pause] Ikkinchi va uchinchi kuni noto'g'ri javoblarni tuzatamiz. [pause] To'rtinchi va beshinchi kuni yangi savollarni qo'shamiz. [pause] Yettinchi kuni natijani birga ko'ramiz. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 076 mijoz-oylanib-qoldi
+Mijoz o'ylanib qoldimi? [pause] Mijoz mahsulot yana borligini so'radi. [pause] Bot mavjudligini tasdiqladi. [pause] Mijoz ertaga olishini aytdi. [pause] Bot mahsulotni band qilib qo'ydi. [pause] Egasiga bitta mahsulot band qilingani haqida xabar bordi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 077 yillik-tejalgan-vaqt
+Bir yilda qancha vaqt tejash mumkin? [pause] Kuniga qirq daqiqa. [pause] Yiliga uch yuz ish kuni. [pause] Jami yilda ikki yuz soat. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 078 bot-zimmasiga-oladigan-ishlar
+Bot nimani zimmasiga oladi? [pause] Takroriy savollar. [pause] Eslatmalar. [pause] Buyurtmani jadvalga yozish. [pause] Va kunlik hisobot. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 079 mijoz-bot-ekanini-biladimi
+Mijoz bot bilan gaplashayotganini biladimi? [pause] Buni siz hal qilasiz. Ochiq aytish ishonchni oshiradi: bot o'zini yordamchi deb tanishtirishi mumkin. Murakkab savolda odam ulanadi. [pause] Ochiqlik, ishonch. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 080 bot-yordamchi
+Bot xodim emas. Yordamchi. [pause] Bot sizni almashtirmaydi. [pause] U takroriy ishni oladi. [pause] Qaror esa sizda qoladi. [pause] Murakkab savolda bot sizni chaqiradi. [pause] Yordamchi bilan ish yengil. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 081 pitsa-buyurtma
+Ochlik kutmaydi. Buyurtma ham. [pause] Mijoz ikkita pitsa va cola buyurtma qildi. [pause] Bot pitsa turini so'radi. [pause] Mijoz ikkala turdan bittadan oldi. [pause] Bot manzilni so'radi. [pause] Mijoz manzilini yozdi. [pause] Oshxonaga buyurtma haqida xabar ketdi. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 082 kunlik-hisobot-telegram
+Kunlik hisobot o'zi keladi. [pause] Kun tugagach, belgilangan vaqtda ish boshlanadi. [pause] Bot jadvaldagi buyurtmalarni o'qiydi. [pause] Sun'iy intellekt qisqa xulosa yozadi. [pause] Hisobot egasiga Telegramdan yuboriladi. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 083 javobsiz-izoh-vs-javobli
+Izohda savol. Javob bormi? [pause] Javobsiz izohlar ko'rinmay qoladi. Bot har izohga javob beradi. [pause] Savolga to'g'ri javob topiladi. [pause] Mijoz o'zi qidirmaydi, xabar yozadi. [pause] Qiziqish so'nmaydi, suhbatga aylanadi. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 084 qayerdan-boshlash
+Avtomatlashtirishni qayerdan boshlash kerak? [pause] Eng takroriy ishdan boshlang. [pause] Eng ko'p vaqt oladigan ishdan boshlang. [pause] Yoki xatosi qimmatga tushadigan ishdan, masalan buyurtmadan. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 085 mijoz-yoli-4-qadam
+Mijoz yo'li: to'rt qadam. [pause] Mijoz reklama yoki postni ko'radi. [pause] Instagramda sizga yozadi. [pause] Bot bilan suhbatda buyurtma beradi. [pause] Yaxshi xizmatdan keyin qaytib keladi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 086 bir-kun-24-soat
+Bot yigirma to'rt soat ishlaydi. [pause] Yarim tundan keyin bot tungi savolga javob berdi. [pause] Ertalab buyurtmani yozdi. [pause] Tushlikda narxlarni aytdi. [pause] Kechqurun bronni tasdiqladi. [pause] Kun oxirida hisobot Telegramga ketdi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 087 mijoz-kutgan-vaqt
+Mijoz uch soat kutsa-chi? [pause] Uch soat kutish. [pause] Har soatda oltmish daqiqa. [pause] Har daqiqada oltmish soniya. [pause] Jami o'n ming sakkiz yuz soniya. Bot esa atigi olti soniyada javob beradi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 088 yomon-sozlangan-bot-belgilari
+Bot yomon sozlangan bo'lsa. [pause] U savolni tushunmaydi va mavzudan chiqib ketadi. [pause] U juda uzun yozadi, mijoz oxirigacha o'qimaydi. [pause] U murakkab holatda odamga uzatmaydi. [pause] U eskirgan narxni aytadi. Bularning hammasini tuzatish mumkin. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 089 mijozlar-malumoti-xavfsizmi
+Mijozlar ma'lumoti xavfsizmi? [pause] Ma'lumot faqat kerakli joyga yoziladi: sizning jadvalingiz va Telegramingiz. Kimga ruxsat berishni siz belgilaysiz. [pause] Kirish huquqi sizda. [pause] Botni o'z biznesingizda sinab ko'ring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 090 uxlamaydigan-sotuvchi
+Eng yaxshi sotuvchi uxlamaydi. [pause] U charchamaydi. [pause] U xafa bo'lmaydi. [pause] U kechasi ham salom beradi. [pause] Narxni hech qachon unutmaydi. [pause] Uni bot deyishadi. [pause] Takroriy ishni botga topshiring. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 091 fitnes-sinov-mashgulot
+Zalga yozilish bir xabarda. [pause] Mijoz sinov mashg'ulotini so'radi. [pause] Bot zal ish vaqtini aytdi. [pause] Mijoz ertaga kelishni so'radi. [pause] Bot ertangi kechki soat oltiga yozishni taklif qildi. [pause] Mijoz rozi bo'ldi. [pause] Zal egasiga sinov mashg'uloti haqida xabar bordi. [pause] Bu sizning biznesingizga mos keladimi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 092 lid-saralash
+Jiddiy mijozni bot ajratadi. [pause] Istalgan kanaldan xabar keladi. [pause] Sun'iy intellekt jiddiy mijozmi yoki oddiy savolmi, baholaydi. [pause] Jiddiy mijoz darrov menejerga uzatiladi. [pause] Qolganlari jadvalga yoziladi. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 093 mijozlar-bazasi-telefon-vs-jadval
+Mijozlar bazasi qayerda? [pause] Raqamlar telefonda emas, jadvalda saqlanadi. [pause] Kim nima olgani esdan chiqmaydi, tarix saqlanadi. [pause] Telefon yo'qolsa ham, ma'lumotning nusxasi bor. [pause] Qayta aloqa qilish oson bo'ladi. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 094 mijoz-qaytishi-3-narsa
+Mijoz qaytishi uchun nima kerak? [pause] Birinchi: tez javob. Birinchi taassurot shu. [pause] Ikkinchi: aniq ma'lumot, narx, manzil va vaqt. [pause] Uchinchi: mijozni eslab qolish. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 095 konsultatsiyada-nima-bolad
+Konsultatsiyada nima bo'ladi? [pause] Avval biznesingiz haqida gaplashamiz: nima sotasiz, kim yozadi. [pause] Keyin qaysi ish sizga og'ir ekanini aniqlaymiz. [pause] Oxirida nimani avtomatlashtirish mumkinligini rejalashtiramiz. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 096 buyurtma-yolda
+Buyurtma holati o'zi yangilanadi. [pause] Mijoz kechqurun buyurtma berdi va qachon kelishini so'radi. [pause] Bot buyurtma qabul qilinganini aytdi. [pause] Kuryer yo'lga chiqdi. [pause] Buyurtma yetkazildi. [pause] Egasiga buyurtma yopilgani haqida xabar bordi. [pause] Sizga ham shunday yordamchi kerakmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 097 kuniga-1-soat-yilda
+Kuniga bir soat, yilda qancha? [pause] Kuniga bir soat takroriy ish. [pause] Haftasiga olti kun. [pause] Yilda ellik ikki hafta. [pause] Jami yilda uch yuz o'n ikki soat. [pause] Mijoz kutmasin. Boshlaymizmi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 098 instagram-profil-tekshiruvi
+Profilingiz tayyormi? [pause] Bio aniq bo'lsin: nima sotasiz va qayerda. [pause] Narxlar yoki katalog bo'lsin. [pause] Aloqa tugmasi bo'lsin. [pause] Va ish vaqti yozilgan bo'lsin. [pause] Keling, birga rejalashtiramiz. Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 099 dasturlashni-bilishim-kerakmi
+Dasturlashni bilishim kerakmi? [pause] Yo'q. Siz biznesingiz, narxlaringiz va qoidalaringiz haqida gapirasiz. Sozlashni, ulashni va sinashni biz qilamiz. [pause] Siz faqat gapirasiz. [pause] Qaysi ish vaqtingizni yeyapti? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.
+
+### 100 bugun-boshlang
+Bugun boshlang. [pause] Mukammal vaqt kelmaydi. [pause] Har kuni bir nechta xabar javobsiz qoladi. [pause] Boshlash uchun bitta suhbat yetadi. [pause] Bepul konsultatsiya. [pause] Izohda plyus belgisini qoldiring. [pause] Sizda ham shunday savol bormi? Izohda plyus belgisini qoldiring. Konsultatsiya bepul.

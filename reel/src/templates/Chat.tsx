@@ -6,10 +6,20 @@ import { Icon } from '../lib/Icon';
 import { Pill, cardStyle, grad, onAccent } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { ChatT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const read = (s: string) => Math.round(Math.min(84, 22 + s.length * 0.85));
 
-export const chatTimes = (b: ChatT) => {
+export const chatTimes = (b: ChatT, tm?: Timing) => {
+  if (tm) {
+    const rows = b.msgs.map((m, i) => {
+      const at = tm.start[i];
+      if (m.from === 'c') return { at, typing: -1 };
+      return { at, typing: Math.max(i > 0 ? tm.start[i - 1] + 16 : 0, at - 30) };
+    });
+    const notifyAt = b.notify ? tm.start[b.msgs.length] : tm.start[b.msgs.length - 1] + 40;
+    return { rows, notifyAt, end: tm.total };
+  }
   let t = 18;
   const rows = b.msgs.map((m) => {
     if (m.from === 'c') {
@@ -25,7 +35,7 @@ export const chatTimes = (b: ChatT) => {
   const notifyAt = t + 8;
   return { rows, notifyAt, end: notifyAt + (b.notify ? 100 : 56) };
 };
-export const chatDuration = (b: ChatT) => chatTimes(b).end;
+export const chatDuration = (b: ChatT, tm?: Timing) => chatTimes(b, tm).end;
 
 const Bubble: React.FC<{ theme: Theme; b: ChatT; m: ChatT['msgs'][number]; at: number; typing: number; first: boolean }> = ({ theme, b, m, at, typing, first }) => {
   const frame = useCurrentFrame();
@@ -58,8 +68,8 @@ const Bubble: React.FC<{ theme: Theme; b: ChatT; m: ChatT['msgs'][number]; at: n
   );
 };
 
-export const Chat: React.FC<{ theme: Theme; b: ChatT }> = ({ theme, b }) => {
-  const tm = chatTimes(b);
+export const Chat: React.FC<{ theme: Theme; b: ChatT; timing?: Timing }> = ({ theme, b, timing }) => {
+  const tm = chatTimes(b, timing);
   const panelH = b.notify ? 1010 : 1200;
   const nP = usePop(tm.notifyAt, 12, 150);
   const insta = b.platform === 'instagram';

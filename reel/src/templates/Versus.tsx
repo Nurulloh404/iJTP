@@ -6,14 +6,16 @@ import { Icon } from '../lib/Icon';
 import { Pill, cardStyle } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import type { VersusT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
 const ROW = 58;
-export const versusDuration = (b: VersusT) => 44 + b.rows.length * ROW + (b.footer ? 130 : 90);
+export const versusDuration = (b: VersusT, tm?: Timing) => (tm ? tm.total : 44 + b.rows.length * ROW + (b.footer ? 130 : 90));
 
-export const Versus: React.FC<{ theme: Theme; b: VersusT }> = ({ theme, b }) => {
+export const Versus: React.FC<{ theme: Theme; b: VersusT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
   const h = usePop(4, 14, 150);
-  const fp = usePop(44 + b.rows.length * ROW + 6, 12, 140);
+  const rowAt = (i: number) => (timing ? timing.start[i] : 44 + i * ROW);
+  const fp = usePop(timing ? timing.start[b.rows.length - 1] + 70 : 44 + b.rows.length * ROW + 6, 12, 140);
   const n = b.rows.length;
   const rowH = n <= 3 ? 250 : n === 4 ? 215 : 178;
   return (
@@ -27,7 +29,7 @@ export const Versus: React.FC<{ theme: Theme; b: VersusT }> = ({ theme, b }) => 
         </div>
       </div>
       {b.rows.map((r, i) => {
-        const at = 44 + i * ROW;
+        const at = rowAt(i);
         const pl = usePop(at, 14, 150);
         const pr = usePop(at + 12, 14, 150);
         const top = 400 + i * (rowH + 22);
@@ -51,8 +53,8 @@ export const Versus: React.FC<{ theme: Theme; b: VersusT }> = ({ theme, b }) => 
       )}
       {b.rows.map((_, i) => (
         <React.Fragment key={i}>
-          <Sfx name="tick" at={44 + i * ROW} volume={0.4} />
-          <Sfx name="pop" at={44 + i * ROW + 12} volume={0.45} />
+          <Sfx name="tick" at={rowAt(i)} volume={0.4} />
+          <Sfx name="pop" at={rowAt(i) + 12} volume={0.45} />
         </React.Fragment>
       ))}
     </AbsoluteFill>

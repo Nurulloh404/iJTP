@@ -30,7 +30,7 @@ for (const id of ids) {
   const t0 = Date.now();
   const inputProps = { id, guard: false };
   const comp = await selectComposition({ serveUrl, id: 'Reel', inputProps, puppeteerInstance: browser });
-  await renderStill({ composition: comp, serveUrl, output: path.join(thumbDir, `${id}.jpg`), frame: 62, inputProps, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 88 });
+  await renderStill({ composition: comp, serveUrl, output: path.join(thumbDir, `${id}.jpg`), frame: 45, inputProps, puppeteerInstance: browser, imageFormat: 'jpeg', jpegQuality: 88 });
   const tmp = file.replace(/\.mp4$/, '.tmp.mp4');
   let last = 0;
   await renderMedia({

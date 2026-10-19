@@ -7,12 +7,13 @@ import { Pill, cardStyle } from '../lib/ui';
 import { Sfx } from '../lib/Sfx';
 import { listTimes } from './List';
 import type { CheckT } from '../content/types';
+import type { Timing } from '../lib/voice';
 
-export const checkDuration = (b: CheckT) => listTimes(b.items).end + (b.footer ? 120 : 80);
+export const checkDuration = (b: CheckT, tm?: Timing) => (tm ? tm.total : listTimes(b.items).end + (b.footer ? 120 : 80));
 
-export const Check: React.FC<{ theme: Theme; b: CheckT }> = ({ theme, b }) => {
+export const Check: React.FC<{ theme: Theme; b: CheckT; timing?: Timing }> = ({ theme, b, timing }) => {
   const frame = useCurrentFrame();
-  const tm = listTimes(b.items);
+  const tm = listTimes(b.items, timing);
   const h = useSoft(0, 16);
   const fp = usePop(tm.end + 6, 12, 140);
   const n = b.items.length;
