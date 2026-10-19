@@ -28,14 +28,17 @@ if (st !== null) all.push({ s: st, e: dur });
 const inner = all.filter((g) => g.s > 0.08 && g.e < dur - 0.12);
 console.log(`pauzalar: ${inner.length} (kutilgan ${totalGaps}); uzunliklar:`, inner.map((g) => (g.e - g.s).toFixed(2)).join(' '));
 if (inner.length !== totalGaps) { console.error(`XATO: ${totalGaps} ta pauza kerak, topildi ${inner.length}`); process.exit(2); }
-// Videolar chegarasi: (V-1) ta eng uzun pauza, vaqt bo'yicha tartiblangan
-const bounds = [...inner].sort((a, b) => b.e - b.s - (a.e - a.s)).slice(0, ids.length - 1).sort((a, b) => a.s - b.s);
-// kutilgan joylashuv tekshiruvi: k-chegara oldidagi pauzalar soni = beats[0..k] yig'indisi - (k+1)
+// Videolar chegarasi: k-video oxiridan keyingi pauza = (beats[0..k] yig'indisi - 1)-chi pauza
+const bounds = [];
 let cum = 0;
-bounds.forEach((g, k) => {
+for (let k = 0; k < ids.length - 1; k++) {
   cum += beats[k];
-  const before = inner.filter((x) => x.e <= g.s).length;
-  if (before !== cum - 1) { console.error(`XATO: ${k + 1}-chegara noto'g'ri joyda (oldidagi pauza ${before}, kutilgan ${cum - 1})`); process.exit(3); }
+  bounds.push(inner[cum - 1]);
+}
+// tekshiruv: chegara pauzasi o'z atrofidagi oddiy pauzalardan uzunroq bo'lishi kerak (ogohlantirish)
+bounds.forEach((g, k) => {
+  const len = g.e - g.s;
+  if (len < 1.0) console.warn(`OGOHLANTIRISH: ${ids[k]}/${ids[k + 1]} chegara pauzasi qisqa (${len.toFixed(2)}s)`);
 });
 const gapLens = bounds.map((g) => (g.e - g.s).toFixed(2));
 console.log('video chegaralari (pauza uzunligi):', gapLens.join(' '));

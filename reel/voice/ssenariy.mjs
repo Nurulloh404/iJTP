@@ -100,7 +100,7 @@ export default {
   // ---- FAQ: [hook, javob, xulosa] ----
   "bot-odamdek-gaplashadimi": ["Bot odamdek gaplashadimi?", "Bot sizning narxlaringiz, manzilingiz va qoidalaringiz asosida yozadi. Murakkab savol bo'lsa, suhbatni sizga uzatadi.", "Qo'lni bo'shatadi, nazoratni emas."],
   "bot-xato-qilsa": ["Bot xato qilsa-chi?", "Bot faqat sizning ma'lumotlaringizga tayanadi. Bilmagan savolni o'ylab topmaydi, suhbatni sizga uzatadi. Xatolar birinchi haftada birga tuzatiladi.", "Xato topiladi va tuzatiladi."],
-  "bot-qimmatmi": ["Bot qimmatmi?", "Narx loyiha hajmiga bog'liq: nechta kanal, jadval va Telegram ulanishi. Aniq narxni konsultatsiyada hisoblaymiz. Konsultatsiya bepul.", "Konsultatsiya bepul."],
+  "bot-qimmatmi": ["Bot qimmatmi?", "Narx loyiha hajmiga bog'liq: nechta kanal, jadval va Telegram ulanishi. Aniq narxni konsultatsiyada hisoblaymiz.", "Konsultatsiya bepul."],
   "kichik-biznesga-kerakmi": ["Kichik biznesga ham kerakmi?", "Agar bir xil savollarga ko'p yozsangiz yoki kechasi xabarlar javobsiz qolsa, foydasi bor. Bunday bo'lmasa, shart emas.", "Avval ehtiyojni aniqlaymiz."],
   "instagram-akkaunt-xavfsizligi": ["Instagram akkauntim xavfsiz qoladimi?", "Bot rasmiy ulanish orqali ishlashi kerak. Qaysi usul ishlatilishini va qanday ruxsat so'ralishini konsultatsiyada ochiq tushuntiramiz.", "Xavfsizlik birinchi savol."],
   "bot-ozbek-tilida": ["Bot o'zbek tilida yozadimi?", "Ha. Bot o'zbek va rus tilida javob bera oladi. Qaysi tilda yozishini va qanday ohangda gaplashishini siz belgilaysiz.", "Til va ohang sizniki."],
