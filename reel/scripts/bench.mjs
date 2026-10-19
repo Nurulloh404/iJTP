@@ -1,0 +1,16 @@
+import path from 'node:path';
+import { setup, selectComposition, renderMedia, root } from './lib.mjs';
+const id = process.argv[2] || '001';
+const conc = Number(process.argv[3] || 4);
+const scale = Number(process.argv[4] || 1);
+const gl = process.argv[5] || 'swangle';
+import { bundle } from '@remotion/bundler';
+import { openBrowser } from '@remotion/renderer';
+const serveUrl = await bundle({ entryPoint: path.join(root, 'src/index.ts'), onProgress: () => {} });
+const browser = await openBrowser('chrome', { browserExecutable: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell', chromiumOptions: { gl } });
+const comp = await selectComposition({ serveUrl, id: 'Reel', inputProps: { id, guard: false }, puppeteerInstance: browser });
+const t0 = Date.now();
+await renderMedia({ composition: comp, serveUrl, codec: 'h264', outputLocation: '/tmp/bench.mp4', inputProps: { id, guard: false }, puppeteerInstance: browser, concurrency: conc, crf: 26, imageFormat: 'jpeg', jpegQuality: 85, frameRange: [100, 219], scale, x264Preset: 'veryfast', muted: true });
+const s = (Date.now() - t0) / 1000;
+console.log(`id=${id} conc=${conc} scale=${scale} gl=${gl}: 120 kadr ${s.toFixed(1)}s = ${(120 / s).toFixed(2)} fps`);
+await browser.close({ silent: true });

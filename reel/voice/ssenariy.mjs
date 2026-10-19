@@ -1,0 +1,123 @@
+// Diktor matni: slug -> [hook, ...har element uchun bitta jumla]. CTA avtomatik qo'shiladi
+// (agar massiv CTA bilan to'liq berilgan bo'lsa, o'zgarmaydi). Raqamlar so'z bilan yoziladi.
+export default {
+  // ---- CHAT ----
+  "gul-dokoni-tungi-buyurtma": ["Kechasi soat o'n bir nol to'rtda mijoz yozdi. Siz uxlayapsiz.", "Mijoz atirgul buketi haqida so'radi.", "Bot olti soniyada javob berdi va vaqtni so'radi.", "Mijoz vaqt va manzilni yozdi.", "Bot buyurtmani qabul qildi.", "Egasiga esa Telegramdan xabar bordi.", "Agar qiziqsangiz, izohda plyus belgisini qoldiring. Biznesingizga bepul konsultatsiya beramiz."],
+  "kofexona-stol-bron": ["Kechqurun uchun stol kerak. Bot band qiladi.", "Mijoz bugun kechqurun to'rt kishiga stol so'radi.", "Bot bo'sh vaqtlarni aytdi.", "Mijoz kechki soat yettini tanladi.", "Bot stolni band qildi va ismni so'radi.", "Egasiga esa Telegramdan yangi bron haqida xabar bordi."],
+  "kiyim-olcham-rang": ["O'lcham haqida savol. Javob darrov.", "Mijoz ko'ylak o'lchamini so'radi.", "Bot mavjud o'lcham va ranglarni aytdi.", "Mijoz qora rangni tanlab, yetkazib berishni so'radi.", "Bot manzilni so'radi.", "Egasiga yangi buyurtma haqida xabar bordi."],
+  "salon-yozilish": ["Salonga yozilish o'zi bo'ladi.", "Mijoz shanba kuniga soch kesishga yozilmoqchi.", "Bot bo'sh vaqtlarni ko'rsatdi.", "Mijoz kunduzgi soat ikkini tanladi.", "Bot yozib qo'ydi va bir kun oldin eslatishni aytdi.", "Salon egasiga yangi yozuv haqida xabar keldi."],
+  "klinika-qabul": ["Bemor kutmaydi. Bot javob beradi.", "Bemor tish og'rig'i bilan yozdi.", "Bot bugungi bo'sh vaqtni aytdi.", "Bemor shu vaqtni tanladi.", "Bot yozib qo'ydi va ismni so'radi.", "Shifokorga shoshilinch qabul haqida xabar ketdi."],
+  "oquv-markazi-sinov-darsi": ["Kurs haqida savol. Olti soniyada javob.", "Mijoz ingliz tili kursi haqida so'radi.", "Bot yangi guruh dushanba kuni boshlanishini aytdi.", "Mijoz sinov darsi bor-yo'qligini so'radi.", "Bot sinov darsiga yozishni taklif qildi.", "Mijoz seshanbani tanladi.", "Markazga sinov darsi haqida xabar bordi."],
+  "avtoservis-navbat": ["Navbat o'zi yoziladi.", "Mijoz moy almashtirish uchun navbat so'radi.", "Bot mashina markasini so'radi.", "Mijoz markani yozdi.", "Bot ertangi bo'sh vaqtlarni taklif qildi.", "Mijoz ertalabki soat o'nni tanladi.", "Ustaxonaga yangi navbat haqida xabar bordi."],
+  "buyurtmam-qayerda": ["Buyurtmam qayerda? Bot biladi.", "Mijoz buyurtmasi qayerdaligini so'radi.", "Bot buyurtma raqamini so'radi.", "Mijoz raqamni yozdi.", "Bot buyurtma yo'lda ekanini aytdi."],
+  "pitsa-buyurtma": ["Ochlik kutmaydi. Buyurtma ham.", "Mijoz ikkita pitsa va cola buyurtma qildi.", "Bot pitsa turini so'radi.", "Mijoz ikkala turdan bittadan oldi.", "Bot manzilni so'radi.", "Mijoz manzilini yozdi.", "Oshxonaga buyurtma haqida xabar ketdi."],
+  "fitnes-sinov-mashgulot": ["Zalga yozilish bir xabarda.", "Mijoz sinov mashg'ulotini so'radi.", "Bot zal ish vaqtini aytdi.", "Mijoz ertaga kelishni so'radi.", "Bot ertangi kechki soat oltiga yozishni taklif qildi.", "Mijoz rozi bo'ldi.", "Zal egasiga sinov mashg'uloti haqida xabar bordi."],
+
+  // ---- FLOW ----
+  "buyurtma-jadval-telegram": ["Buyurtma o'zi jadvalga tushadi.", "Mijoz Instagramda xabar yozadi.", "Sun'iy intellekt olti soniyada javob beradi.", "Buyurtma jadvalga yoziladi.", "Egasiga esa Telegramdan xabar boradi."],
+  "yangi-mijoz-bazaga": ["Yangi mijoz o'zi bazaga tushadi.", "Mijoz saytdagi formani to'ldiradi.", "Sun'iy intellekt ma'lumotni tekshiradi.", "Ariza jadvalga yoziladi.", "Menejerga Telegramdan xabar boradi."],
+  "izohlarga-avto-javob": ["Izohlarga ham bot javob beradi.", "Postga yangi izoh yoziladi.", "Sun'iy intellekt mos javob tayyorlaydi.", "Spam va haqoratli izohlar saralanadi.", "Javob joylanadi, mijoz e'tibor ko'radi."],
+  "ombor-ogohlantirish": ["Tovar tugashidan oldin bilasiz.", "Sotuv tasdiqlanadi.", "Ombor jadvalida qoldiq kamayadi.", "Qoldiq chegaradan pastga tushadi.", "Egasiga Telegramdan ogohlantirish boradi."],
+  "tolov-chek-hisobot": ["To'lov keldi. Hammasi yozildi.", "Mijoz to'lov qiladi.", "Chek jadvalga yoziladi.", "Mijozga to'lov qabul qilingani haqida xabar boradi.", "Kunlik jami hisobot yangilanadi."],
+  "tugilgan-kun-tabrik": ["Mijozni tabriklashni bot eslaydi.", "Tug'ilgan kunlar mijozlar bazasida saqlanadi.", "Har tong bugun kimning bayrami ekani tekshiriladi.", "Sun'iy intellekt ismi bilan tabrik yozadi.", "Tabrik sovg'a taklifi bilan yuboriladi."],
+  "sharh-sorash": ["Sharhlarni bot o'zi yig'adi.", "Buyurtma yetkazilgach belgilanadi.", "Bot bir kun kutadi, mijozni bezovta qilmaydi.", "Keyin qisqa sharh so'rovi yuboriladi.", "Baholar jadvalda bir joyda to'planadi."],
+  "bron-eslatma": ["Eslatma o'zi ketadi.", "Mijoz vaqt band qiladi.", "Bir kun oldin bot eslatma yuboradi.", "Mijoz kelishini tasdiqlaydi.", "Jadvalda tasdiqlanganlar belgilanadi."],
+  "kunlik-hisobot-telegram": ["Kunlik hisobot o'zi keladi.", "Kun tugagach, belgilangan vaqtda ish boshlanadi.", "Bot jadvaldagi buyurtmalarni o'qiydi.", "Sun'iy intellekt qisqa xulosa yozadi.", "Hisobot egasiga Telegramdan yuboriladi."],
+  "lid-saralash": ["Jiddiy mijozni bot ajratadi.", "Istalgan kanaldan xabar keladi.", "Sun'iy intellekt jiddiy mijozmi yoki oddiy savolmi, baholaydi.", "Jiddiy mijoz darrov menejerga uzatiladi.", "Qolganlari jadvalga yoziladi."],
+
+  // ---- VERSUS ----
+  "qolda-vs-bot": ["Qo'lda yoki bot bilan?", "Qo'lda javob ertalab beriladi. Bot bilan esa darrov.", "Buyurtma daftarga emas, jadvalga o'zi yoziladi.", "Bir xil savolga qayta yozmaysiz, bot javobni biladi.", "Xabarlar o'tkazib yuborilmaydi, hech narsa yo'qolmaydi."],
+  "javob-tezligi": ["Javob tezligi: odam yoki bot?", "Band bo'lsangiz, javob kechikadi. Bot esa darrov javob beradi.", "Narx ro'yxati doim tayyor turadi.", "Kech javob mijozni yo'qotadi, bot esa vaqtida javob beradi.", "Charchaganingizda xato bo'lishi mumkin, bot har safar bir xil yozadi."],
+  "daftar-vs-jadval": ["Daftar yoki jadval?", "Daftarga qo'lda yozasiz, jadvalga esa o'zi yoziladi.", "Jadvalda mijoz yozgani aynan saqlanadi.", "Qidirish uzoq vaqt oladi, filtr esa bir lahzada topadi.", "Daftar yo'qolishi mumkin, jadval esa hamma narsani saqlaydi."],
+  "eslatma-qongiroq-vs-xabar": ["Eslatma o'zi ketsa-chi?", "Har mijozga qo'ng'iroq qilmaysiz, xabar o'zi ketadi.", "Eslatish esdan chiqmaydi, har safar vaqtida boradi.", "Mijoz qulay vaqtda xabarga javob beradi.", "Sizning vaqtingiz bo'shaydi."],
+  "hisobot-qolda-vs-avto": ["Hisobotni kim tayyorlaydi?", "Kechqurun o'zingiz hisoblamaysiz, hisobot tayyor keladi.", "Raqamlar jadvaldan aniq olinadi.", "Hamma narsa telefon va daftarda emas, bir joyda.", "Hisobotni haftada bir emas, har kuni ko'rasiz."],
+  "takroriy-savol-vs-bot": ["Bir xil savol. Yuzinchi marta.", "Matnni qidirib yubormaysiz, bot o'zi yuboradi.", "Narx ro'yxati doim tayyor turadi.", "Manzilni qayta yozmaysiz, u avtomatik chiqadi.", "Siz bir xil gapdan charchamaysiz, yangi ishga o'tasiz."],
+  "bot-yoq-vs-bot-bor-tun": ["Tunda nima o'zgaradi?", "Botsiz tungi xabar sovib qoladi. Bot bilan tunda ham javob bor.", "Ertalab xabarlar uyumi o'rniga buyurtmalar ro'yxatini ko'rasiz.", "Mijoz boshqa joyga ketmaydi, sizda qoladi.", "Siz esa tinch uxlaysiz."],
+  "xodim-vs-bot-orgatish": ["Xodimga ham, botga ham o'rgatiladi.", "Xodimga qoidani har safar tushuntirasiz. Botga esa bir marta yozasiz.", "Har kim boshqacha javob beradi, bot esa hammaga bir xil.", "Xodim dam oladi yoki kasal bo'ladi, bot doim ishda.", "Bilim bir odamda emas, tizimda saqlanadi."],
+  "javobsiz-izoh-vs-javobli": ["Izohda savol. Javob bormi?", "Javobsiz izohlar ko'rinmay qoladi. Bot har izohga javob beradi.", "Savolga to'g'ri javob topiladi.", "Mijoz o'zi qidirmaydi, xabar yozadi.", "Qiziqish so'nmaydi, suhbatga aylanadi."],
+  "mijozlar-bazasi-telefon-vs-jadval": ["Mijozlar bazasi qayerda?", "Raqamlar telefonda emas, jadvalda saqlanadi.", "Kim nima olgani esdan chiqmaydi, tarix saqlanadi.", "Telefon yo'qolsa ham, ma'lumotning nusxasi bor.", "Qayta aloqa qilish oson bo'ladi."],
+
+  // ---- LISTS ----
+  "mijoz-yoqotish-3-sabab": ["Mijoz nega ketib qoladi?", "Birinchi sabab: sekin javob. Mijoz kutmaydi, boshqa do'konga o'tadi.", "Ikkinchi: narx aytilmagan. Uni bilish uchun yana yozish kerak.", "Uchinchi: kechasi javob yo'q. Kech yozganlar ertalabgacha sovib qoladi."],
+  "5-takroriy-ish": ["Beshta ish. Bot qiladi.", "Birinchi: narxni aytish.", "Ikkinchi: manzil va ish vaqtini aytish.", "Uchinchi: buyurtma qabul qilish.", "To'rtinchi: eslatma yuborish.", "Beshinchi: hisobot tayyorlash."],
+  "botdan-oldin-3-savol": ["Bot yaratishdan oldin uchta savol.", "Birinchi: mijoz nimani so'raydi? Eng ko'p savollarni yozib chiqing.", "Ikkinchi: javob qanday bo'lsin? Qisqa, aniq va do'stona.", "Uchinchi: keyin nima bo'ladi? Buyurtma kimga va qayerga tushadi?"],
+  "dm-3-xato": ["Direktda uchta xato qilmang.", "Birinchi: salomsiz javob berish.", "Ikkinchi: juda uzun matn yozish. Qisqa javob tezroq o'qiladi.", "Uchinchi: keyingi qadamni aytmaslik."],
+  "mijoz-dmda-nimani-sorayd": ["Mijoz direktda nimani so'raydi?", "Eng ko'p narxni so'raydi.", "Keyin mahsulot bor-yo'qligini so'raydi.", "Va yetkazib berish qachon va qanday bo'lishini so'raydi."],
+  "kichik-biznes-4-avtomatlashtirish": ["To'rtta oddiy avtomatlashtirish.", "Direktga avtomatik javob.", "Buyurtmalar jadvali.", "Telegramga xabar.", "Va avtomatik eslatma."],
+  "yaxshi-javob-3-belgi": ["Yaxshi javobning uchta belgisi.", "Birinchisi: qisqa. Ikki-uch gap yetarli.", "Ikkinchisi: aniq. Savolga to'g'ri javob beradi.", "Uchinchisi: keyingi qadam bor, masalan: qaysi vaqt qulay?"],
+  "telegram-xabar-3-foyda": ["Telegram xabarning uchta foydasi.", "Birinchi: yangi buyurtmani darrov bilasiz.", "Ikkinchi: ism, mahsulot, vaqt va manzil bir joyda.", "Uchinchi: ofisda ham, yo'lda ham xabar olasiz."],
+  "qayerdan-boshlash": ["Avtomatlashtirishni qayerdan boshlash kerak?", "Eng takroriy ishdan boshlang.", "Eng ko'p vaqt oladigan ishdan boshlang.", "Yoki xatosi qimmatga tushadigan ishdan, masalan buyurtmadan."],
+  "mijoz-qaytishi-3-narsa": ["Mijoz qaytishi uchun nima kerak?", "Birinchi: tez javob. Birinchi taassurot shu.", "Ikkinchi: aniq ma'lumot, narx, manzil va vaqt.", "Uchinchi: mijozni eslab qolish."],
+
+  // ---- STEPS ----
+  "bot-4-qadamda": ["Bot to'rt qadamda ishga tushadi.", "Birinchi qadam: suhbat. Biznesingizni birga ko'rib chiqamiz.", "Ikkinchi: sozlash. Bot javoblari va jadvalni tayyorlaymiz.", "Uchinchi: sinov. Sizning ishtirokingizda tekshiramiz.", "To'rtinchi: ishga tushirish. Bot mijozlarga javob bera boshlaydi."],
+  "buyurtma-5-qadamda": ["Buyurtma besh qadamda.", "Mijoz yozadi.", "Bot narx va mavjudlikni aytadi.", "Buyurtma yig'iladi: ism, manzil, vaqt.", "Hammasi jadvalga yoziladi.", "Va sizga Telegramdan xabar keladi."],
+  "savollar-bazasi-3-qadam": ["Bot qanday o'rganadi?", "Birinchi: mijozlar ko'p so'raydigan savollarni yig'amiz.", "Ikkinchi: har savolga qisqa javob yozamiz.", "Uchinchi: narx va ma'lumotlarni tekshiramiz."],
+  "botni-sinash-4-qadam": ["Ishga tushirishdan oldin sinov.", "Avval oddiy savol bering, masalan: narxi qancha?", "Keyin qiyin savol bering. Bot sizga uzatadimi?", "Buyurtma bering. U jadvalga tushdimi?", "Va Telegramga xabar kelganini tekshiring."],
+  "instagram-ulash-3-qadam": ["Instagramni botga ulash.", "Birinchi: profilni biznes rejimiga o'tkazing.", "Ikkinchi: bot xabarlarni ko'rishi uchun ruxsat bering.", "Uchinchi: sinov xabari yuborib, javobni tekshiramiz."],
+  "jadval-3-qadam": ["Jadval o'zi to'ladi.", "Birinchi: ustunlarni belgilaymiz, ism, mahsulot, vaqt, manzil.", "Ikkinchi: botni jadvalga ulaymiz.", "Uchinchi: birinchi buyurtma qatorini tekshiramiz."],
+  "telegram-xabarnoma-3-qadam": ["Telegramga xabar kelsin.", "Birinchi: xabar qayerga kelishini tanlang, guruh yoki bot.", "Ikkinchi: xabarda nimalar ko'rinishini belgilang.", "Uchinchi: test buyurtma yuborib ko'ring."],
+  "birinchi-hafta": ["Bot ishga tushdi. Keyin nima?", "Birinchi kuni bot javoblarini o'qib chiqamiz.", "Ikkinchi va uchinchi kuni noto'g'ri javoblarni tuzatamiz.", "To'rtinchi va beshinchi kuni yangi savollarni qo'shamiz.", "Yettinchi kuni natijani birga ko'ramiz."],
+  "mijoz-yoli-4-qadam": ["Mijoz yo'li: to'rt qadam.", "Mijoz reklama yoki postni ko'radi.", "Instagramda sizga yozadi.", "Bot bilan suhbatda buyurtma beradi.", "Yaxshi xizmatdan keyin qaytib keladi."],
+  "konsultatsiyada-nima-bolad": ["Konsultatsiyada nima bo'ladi?", "Avval biznesingiz haqida gaplashamiz: nima sotasiz, kim yozadi.", "Keyin qaysi ish sizga og'ir ekanini aniqlaymiz.", "Oxirida nimani avtomatlashtirish mumkinligini rejalashtiramiz."],
+
+  // ---- CLOCKS ----
+  "bir-kecha-bir-mijoz": ["Siz uxladingiz. Bot sotdi.", "Kechasi soat o'n bir nol to'rtda mijoz narxni so'radi.", "Bot narx va mavjudligini aytdi.", "Buyurtma jadvalga yozildi.", "Egasiga Telegramdan xabar bordi.", "Ertalab soat sakkiz o'ttizda siz uyg'ondingiz, buyurtma tayyor."],
+  "tushlik-payti": ["Siz tushlik qilyapsiz. Bot ishda.", "Tushlik payti mijoz ertaga yetkazib berishni so'radi.", "Bot shahar bo'yicha yetkazishni tasdiqladi.", "Manzil va vaqtni so'radi.", "Buyurtmani jadvalga yozdi.", "Egasiga xabar yubordi."],
+  "bayram-arafasi": ["Bayram arafasi. Siz oilangiz bilan.", "Kech kirganda mijoz bayramga tort so'radi.", "Bot qaysi turi kerakligini so'radi.", "Mijoz ikki kilogrammli shokoladli tortni tanladi.", "Buyurtma qabul qilindi.", "Konditerga xabar yuborildi."],
+  "yakshanba-ertalab": ["Dam olish kuni. Telefon tinch.", "Yakshanba ertalab mijoz bugun ishlaysizlarmi, deb so'radi.", "Bot ish vaqtini aytdi.", "Mijoz soat o'n birda kelishini yozdi.", "Bot yozib qo'ydi.", "Soat o'nda egasiga bugungi yozuvlar ro'yxati keldi."],
+  "siz-safardasiz": ["Siz havoda. Biznes yerda.", "Siz samolyotdasiz, mijoz esa narxlar ro'yxatini so'radi.", "Bot ro'yxatni yubordi.", "Mijoz ikkita buyurtma bermoqchi bo'ldi.", "Bot buyurtmani jadvalga yozdi.", "Qo'nganingizdan keyin hammasini ko'rasiz."],
+  "erta-tong": ["Tong soat besh ellikda. Kim yozadi?", "Erta tongda mijoz yetkazib berish bor-yo'qligini so'radi.", "Bot soat to'qqizdan boshlanishini aytdi.", "Mijoz o'z manziliga ham yetkazishni so'radi.", "Bot manzilni so'radi va tekshirishni boshladi.", "Siz uyg'ongach, hammasi tayyor turadi."],
+  "reklama-chiqqan-kun": ["Reklama chiqdi. Xabarlar ko'p.", "Tushda reklama ishga tushdi.", "Mijoz narxni so'radi.", "Bot narx va mavjudlikni aytdi.", "Keyin ism va manzilni so'radi.", "Yangi buyurtmalar jadvalda paydo bo'ldi."],
+  "mijoz-oylanib-qoldi": ["Mijoz o'ylanib qoldimi?", "Mijoz mahsulot yana borligini so'radi.", "Bot mavjudligini tasdiqladi.", "Mijoz ertaga olishini aytdi.", "Bot mahsulotni band qilib qo'ydi.", "Egasiga bitta mahsulot band qilingani haqida xabar bordi."],
+  "bir-kun-24-soat": ["Bot yigirma to'rt soat ishlaydi.", "Yarim tundan keyin bot tungi savolga javob berdi.", "Ertalab buyurtmani yozdi.", "Tushlikda narxlarni aytdi.", "Kechqurun bronni tasdiqladi.", "Kun oxirida hisobot Telegramga ketdi."],
+  "buyurtma-yolda": ["Buyurtma holati o'zi yangilanadi.", "Mijoz kechqurun buyurtma berdi va qachon kelishini so'radi.", "Bot buyurtma qabul qilinganini aytdi.", "Kuryer yo'lga chiqdi.", "Buyurtma yetkazildi.", "Egasiga buyurtma yopilgani haqida xabar bordi."],
+
+  // ---- CALCS ----
+  "takroriy-savollar-vaqti": ["Bir xil savolga qancha vaqt ketadi?", "Kuniga yigirmata takroriy savol.", "Har biriga ikki daqiqa.", "Oyiga yigirma olti ish kuni.", "Jami oyiga taxminan o'n yetti soat. Bu vaqtni savdoga sarflash mumkin."],
+  "buyurtma-yozish-vaqti": ["Buyurtmani qo'lda yozish qancha vaqt oladi?", "Kuniga o'n beshta buyurtma.", "Har birini yozishga uch daqiqa.", "Oyiga o'ttiz kun.", "Jami oyiga yigirma ikki yarim soat."],
+  "eslatma-qongiroqlari-vaqti": ["Eslatma qo'ng'iroqlari qancha vaqt oladi?", "Kuniga o'nta qo'ng'iroq.", "Har biri ikki daqiqa.", "Oyiga yigirma olti ish kuni.", "Jami oyiga taxminan to'qqiz soat."],
+  "hisobot-vaqti": ["Hisobot uchun qancha vaqt ketadi?", "Har kuni o'ttiz daqiqa.", "Haftasiga olti ish kuni.", "Oyiga to'rt hafta.", "Jami oyiga o'n ikki soat."],
+  "javobsiz-xabarlar-yillik": ["Javobsiz xabar yo'qolgan imkoniyatdir.", "Kuniga uchta javobsiz xabar.", "Oyiga o'ttiz kun.", "Yilda o'n ikki oy.", "Jami yilda bir ming sakson ta xabar."],
+  "tungi-xabarlar": ["Tungi xabarlar nechta bo'ladi?", "Kechasi to'rtta xabar kelsa.", "Oyiga o'ttiz kun.", "Jami oyiga bir yuz yigirma ta xabar."],
+  "izohga-javob-vaqti": ["Izohga javob qancha vaqt oladi?", "Kuniga yigirma beshta izoh.", "Har biriga bir daqiqa.", "Oyiga o'ttiz kun.", "Jami oyiga o'n ikki yarim soat."],
+  "yillik-tejalgan-vaqt": ["Bir yilda qancha vaqt tejash mumkin?", "Kuniga qirq daqiqa.", "Yiliga uch yuz ish kuni.", "Jami yilda ikki yuz soat."],
+  "mijoz-kutgan-vaqt": ["Mijoz uch soat kutsa-chi?", "Uch soat kutish.", "Har soatda oltmish daqiqa.", "Har daqiqada oltmish soniya.", "Jami o'n ming sakkiz yuz soniya. Bot esa atigi olti soniyada javob beradi."],
+  "kuniga-1-soat-yilda": ["Kuniga bir soat, yilda qancha?", "Kuniga bir soat takroriy ish.", "Haftasiga olti kun.", "Yilda ellik ikki hafta.", "Jami yilda uch yuz o'n ikki soat."],
+
+  // ---- CHECKS ----
+  "bot-nimalar-qiladi": ["Bot nimalarni qila oladi?", "Narxni aytadi, savolga darrov javob beradi.", "Buyurtmani qabul qiladi, ism, manzil va vaqtni so'raydi.", "Jadvalga yozadi, qo'lda ko'chirish shart emas.", "Sizga Telegramdan xabar beradi."],
+  "bot-nima-qilmasligi-kerak": ["Botga taqiq bo'lgan ishlar.", "Narxni o'ylab topmasligi kerak. Faqat sizning narxlaringiz.", "Va'da bermasligi kerak. Muddat va chegirmani siz belgilaysiz.", "Bahslashmasligi kerak. Murakkab holat sizga uzatiladi.", "Bilmagan narsani aytmasligi kerak. U aniqlab javob beraman, deydi."],
+  "botdan-oldin-tayyorlang": ["Botdan oldin nimalar kerak?", "Narxlar ro'yxati.", "Ish vaqti va manzil.", "Ko'p so'raladigan savollar. O'ntasi ham yetarli.", "Buyurtma qoidalari.", "Va murakkab holat uchun bog'lanish yo'li."],
+  "sizga-bot-kerakmi": ["Sizga bot kerakmi?", "Mijozlar kechasi yozadimi?", "Savollar takrorlanadimi?", "Buyurtmalar daftarda yoziladimi?", "Xabarlar ko'payib, hammasiga ulgurmayapsizmi? Unda bot foyda beradi."],
+  "yaxshi-bot-javobi-belgilari": ["Yaxshi bot javobi qanday bo'ladi?", "U salom bilan boshlanadi.", "U qisqa bo'ladi.", "U aniq bo'ladi.", "Va keyingi qadamni aytadi."],
+  "haftalik-tekshiruv": ["Botni haftada bir tekshiring.", "Bot javoblarini o'qib chiqing.", "Yangi savollarni bazaga qo'shing.", "Jadvalda buyurtmalar to'liqligini ko'ring.", "Va narxlarni yangilang."],
+  "telegram-xabar-tarkibi": ["Egasiga xabarda nima yozilsin?", "Mijoz ismi.", "Buyurtma: nima va nechta.", "Vaqt va manzil.", "Va bog'lanish uchun telefon raqami."],
+  "bot-zimmasiga-oladigan-ishlar": ["Bot nimani zimmasiga oladi?", "Takroriy savollar.", "Eslatmalar.", "Buyurtmani jadvalga yozish.", "Va kunlik hisobot."],
+  "yomon-sozlangan-bot-belgilari": ["Bot yomon sozlangan bo'lsa.", "U savolni tushunmaydi va mavzudan chiqib ketadi.", "U juda uzun yozadi, mijoz oxirigacha o'qimaydi.", "U murakkab holatda odamga uzatmaydi.", "U eskirgan narxni aytadi. Bularning hammasini tuzatish mumkin."],
+  "instagram-profil-tekshiruvi": ["Profilingiz tayyormi?", "Bio aniq bo'lsin: nima sotasiz va qayerda.", "Narxlar yoki katalog bo'lsin.", "Aloqa tugmasi bo'lsin.", "Va ish vaqti yozilgan bo'lsin."],
+
+  // ---- FAQ: [hook, javob, xulosa] ----
+  "bot-odamdek-gaplashadimi": ["Bot odamdek gaplashadimi?", "Bot sizning narxlaringiz, manzilingiz va qoidalaringiz asosida yozadi. Murakkab savol bo'lsa, suhbatni sizga uzatadi.", "Qo'lni bo'shatadi, nazoratni emas."],
+  "bot-xato-qilsa": ["Bot xato qilsa-chi?", "Bot faqat sizning ma'lumotlaringizga tayanadi. Bilmagan savolni o'ylab topmaydi, suhbatni sizga uzatadi. Xatolar birinchi haftada birga tuzatiladi.", "Xato topiladi va tuzatiladi."],
+  "bot-qimmatmi": ["Bot qimmatmi?", "Narx loyiha hajmiga bog'liq: nechta kanal, jadval va Telegram ulanishi. Aniq narxni konsultatsiyada hisoblaymiz.", "Konsultatsiya bepul."],
+  "kichik-biznesga-kerakmi": ["Kichik biznesga ham kerakmi?", "Agar bir xil savollarga ko'p yozsangiz yoki kechasi xabarlar javobsiz qolsa, foydasi bor. Bunday bo'lmasa, shart emas.", "Avval ehtiyojni aniqlaymiz."],
+  "instagram-akkaunt-xavfsizligi": ["Instagram akkauntim xavfsiz qoladimi?", "Bot rasmiy ulanish orqali ishlashi kerak. Qaysi usul ishlatilishini va qanday ruxsat so'ralishini konsultatsiyada ochiq tushuntiramiz.", "Xavfsizlik birinchi savol."],
+  "bot-ozbek-tilida": ["Bot o'zbek tilida yozadimi?", "Ha. Bot o'zbek va rus tilida javob bera oladi. Qaysi tilda yozishini va qanday ohangda gaplashishini siz belgilaysiz.", "Til va ohang sizniki."],
+  "bot-qancha-vaqtda-tayyor": ["Bot qancha vaqtda tayyor bo'ladi?", "Murakkablikka bog'liq. Oddiy javob beruvchi bot tezroq, jadval va Telegram ulansa biroz ko'proq vaqt ketadi. Aniq muddatni konsultatsiyada aytamiz.", "Muddatni oldindan kelishamiz."],
+  "mijoz-bot-ekanini-biladimi": ["Mijoz bot bilan gaplashayotganini biladimi?", "Buni siz hal qilasiz. Ochiq aytish ishonchni oshiradi: bot o'zini yordamchi deb tanishtirishi mumkin. Murakkab savolda odam ulanadi.", "Ochiqlik, ishonch."],
+  "mijozlar-malumoti-xavfsizmi": ["Mijozlar ma'lumoti xavfsizmi?", "Ma'lumot faqat kerakli joyga yoziladi: sizning jadvalingiz va Telegramingiz. Kimga ruxsat berishni siz belgilaysiz.", "Kirish huquqi sizda."],
+  "dasturlashni-bilishim-kerakmi": ["Dasturlashni bilishim kerakmi?", "Yo'q. Siz biznesingiz, narxlaringiz va qoidalaringiz haqida gapirasiz. Sozlashni, ulashni va sinashni biz qilamiz.", "Siz faqat gapirasiz."],
+
+  // ---- STORIES ----
+  "mijoz-kutmaydi": ["Mijoz kutmaydi.", "Kechasi soat o'n bir nol to'rt.", "Mijoz yozdi.", "Siz uxlayapsiz.", "Ertalab javob berdingiz. Kech bo'ldi.", "Mijoz allaqachon boshqa joydan oldi.", "Bot esa olti soniyada javob beradi."],
+  "soat-uchda": ["Soat uchda.", "Soat tunda uch.", "Egasi uxlayapti.", "Bir mijoz savol yozdi.", "Narxi qancha?", "Bot olti soniyada javob berdi.", "Ertalab buyurtma sizni kutadi."],
+  "javob-kech-boldi": ["Javob kech bo'ldi.", "Mijoz kechasi soat o'n bir nol to'rtda yozdi.", "Siz ertalab ko'rdingiz.", "Javob berdingiz.", "U allaqachon boshqa joydan oldi.", "Bir xabar, bir mijoz.", "Bot kutmaydi."],
+  "yakshanba-dasturxon": ["Dam olish kunida ish bormi?", "Yakshanba. Oila dasturxonda.", "Telefon jiringladi.", "Mijoz yozdi.", "Siz esa oilangiz bilan.", "Bot javob berdi. Buyurtma yozildi."],
+  "birinchi-javob": ["Birinchi javob hal qiladi.", "Mijoz bir nechta do'konga yozdi.", "Ko'pincha birinchi javob bergan yutadi.", "Sekin javob, sovigan qiziqish.", "Tez javob, ishonch.", "Bot doim birinchi bo'ladi."],
+  "bir-xabar-bir-mijoz": ["Bir xabar, bir mijoz.", "Har xabar, bir odam.", "Har javobsiz xabar, bir imkoniyat.", "Siz hammasiga ulgurmaysiz.", "Bot ulguradi.", "Siz esa muhim ishga vaqt topasiz."],
+  "siz-operator-emassiz": ["Siz operator emassiz.", "Siz biznes egasisiz.", "Kun bo'yi javob yozish sizning ishingiz emas.", "Strategiya. Mahsulot. Mijoz bilan munosabat.", "Takroriy javobni bot yozsin."],
+  "bot-yordamchi": ["Bot xodim emas. Yordamchi.", "Bot sizni almashtirmaydi.", "U takroriy ishni oladi.", "Qaror esa sizda qoladi.", "Murakkab savolda bot sizni chaqiradi.", "Yordamchi bilan ish yengil."],
+  "uxlamaydigan-sotuvchi": ["Eng yaxshi sotuvchi uxlamaydi.", "U charchamaydi.", "U xafa bo'lmaydi.", "U kechasi ham salom beradi.", "Narxni hech qachon unutmaydi.", "Uni bot deyishadi."],
+  "bugun-boshlang": ["Bugun boshlang.", "Mukammal vaqt kelmaydi.", "Har kuni bir nechta xabar javobsiz qoladi.", "Boshlash uchun bitta suhbat yetadi.", "Bepul konsultatsiya.", "Izohda plyus belgisini qoldiring."],
+};

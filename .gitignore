@@ -1,0 +1,5 @@
+node_modules/
+reel/.check/
+reel/.build/
+reel/.audio-tmp/
+*.tmp.mp4
