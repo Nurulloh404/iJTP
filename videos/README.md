@@ -1,6 +1,6 @@
 # Reel videolar (100 ta g'oya)
 
-Vertikal 9:16 (1080x1920, 30 fps). Diktor ovozi (ElevenLabs, "Nodira") hozircha 12 ta videoda bor; qolganlarida faqat sintez qilingan musiqa va SFX. Ovoz qo'shish: `reel/voice/README.md`. Har bir videoning Instagram opisaniyasi `captions/NNN.txt` faylida, muqova (poster) `thumbs/NNN.jpg` da.
+Vertikal 9:16 (1080x1920, 30 fps). Diktor ovozi (ElevenLabs, "Nodira") hozircha 30 ta videoda bor; qolganlarida faqat sintez qilingan musiqa va SFX. Ovoz qo'shish: `reel/voice/README.md`. Har bir videoning Instagram opisaniyasi `captions/NNN.txt` faylida, muqova (poster) `thumbs/NNN.jpg` da.
 
 CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi suhbat va raqamlar namuna/misol, haqiqiy natija emas.
 
@@ -14,28 +14,28 @@ CTA hammasida bir xil: izohda "+" qoldirish, bepul konsultatsiya. Videolardagi s
 | 006 | [006-bir-kecha-bir-mijoz.mp4](006-bir-kecha-bir-mijoz.mp4) | Soat bo'yicha hikoya | 26.1 s | diktor | Bir kecha, bir mijoz: bot ishlaydi |
 | 007 | [007-takroriy-savollar-vaqti.mp4](007-takroriy-savollar-vaqti.mp4) | Misol hisob | 22.9 s | diktor | Takroriy savollarga ketadigan vaqt (misol) |
 | 008 | [008-bot-nimalar-qiladi.mp4](008-bot-nimalar-qiladi.mp4) | Chek-list | 22.9 s | diktor | Bot nimalarni qila oladi |
-| 009 | [009-bot-odamdek-gaplashadimi.mp4](009-bot-odamdek-gaplashadimi.mp4) | Savol-javob | 18.6 s | - | Bot odamdek gaplashadimi? |
+| 009 | [009-bot-odamdek-gaplashadimi.mp4](009-bot-odamdek-gaplashadimi.mp4) | Savol-javob | 21.3 s | diktor | Bot odamdek gaplashadimi? |
 | 010 | [010-mijoz-kutmaydi.mp4](010-mijoz-kutmaydi.mp4) | Hikoya | 23.6 s | diktor | Mijoz kutmaydi |
 | 011 | [011-kofexona-stol-bron.mp4](011-kofexona-stol-bron.mp4) | Suhbat namunasi | 26.3 s | diktor | Qahvaxona: stol bron qilish boti |
 | 012 | [012-yangi-mijoz-bazaga.mp4](012-yangi-mijoz-bazaga.mp4) | Jarayon sxemasi | 20.6 s | diktor | Yangi mijoz o'zi bazaga tushadi |
 | 013 | [013-javob-tezligi.mp4](013-javob-tezligi.mp4) | Taqqoslash | 28.4 s | diktor | Javob tezligi: odam yoki bot |
-| 014 | [014-5-takroriy-ish.mp4](014-5-takroriy-ish.mp4) | Ro'yxat | 21.8 s | - | Bot qiladigan 5 ta takroriy ish |
-| 015 | [015-buyurtma-5-qadamda.mp4](015-buyurtma-5-qadamda.mp4) | Qadamlar | 21.3 s | - | Mijoz buyurtmasi 5 qadamda |
-| 016 | [016-tushlik-payti.mp4](016-tushlik-payti.mp4) | Soat bo'yicha hikoya | 22.1 s | - | Tushlik payti ham bot ishda |
-| 017 | [017-buyurtma-yozish-vaqti.mp4](017-buyurtma-yozish-vaqti.mp4) | Misol hisob | 22.0 s | - | Buyurtmani qo'lda yozishga ketadigan vaqt (misol) |
-| 018 | [018-bot-nima-qilmasligi-kerak.mp4](018-bot-nima-qilmasligi-kerak.mp4) | Chek-list | 21.2 s | - | Bot hech qachon qilmasligi kerak bo'lgan ishlar |
-| 019 | [019-bot-xato-qilsa.mp4](019-bot-xato-qilsa.mp4) | Savol-javob | 19.7 s | - | Bot xato qilsa nima bo'ladi? |
-| 020 | [020-soat-uchda.mp4](020-soat-uchda.mp4) | Hikoya | 23.5 s | - | Soat 03:00 da bir xabar |
-| 021 | [021-kiyim-olcham-rang.mp4](021-kiyim-olcham-rang.mp4) | Suhbat namunasi | 22.5 s | - | Kiyim do'koni: o'lcham va rang so'rovi |
-| 022 | [022-izohlarga-avto-javob.mp4](022-izohlarga-avto-javob.mp4) | Jarayon sxemasi | 16.4 s | - | Instagram izohlariga avtomatik javob |
-| 023 | [023-daftar-vs-jadval.mp4](023-daftar-vs-jadval.mp4) | Taqqoslash | 20.2 s | - | Buyurtma daftarda yoki jadvalda |
-| 024 | [024-botdan-oldin-3-savol.mp4](024-botdan-oldin-3-savol.mp4) | Ro'yxat | 19.0 s | - | Bot yaratishdan oldin 3 savol |
-| 025 | [025-savollar-bazasi-3-qadam.mp4](025-savollar-bazasi-3-qadam.mp4) | Qadamlar | 18.2 s | - | Bot uchun savollar bazasi 3 qadamda |
-| 026 | [026-bayram-arafasi.mp4](026-bayram-arafasi.mp4) | Soat bo'yicha hikoya | 21.9 s | - | Bayram arafasida kech soatda buyurtma |
-| 027 | [027-eslatma-qongiroqlari-vaqti.mp4](027-eslatma-qongiroqlari-vaqti.mp4) | Misol hisob | 22.0 s | - | Eslatma qo'ng'iroqlariga ketadigan vaqt (misol) |
-| 028 | [028-botdan-oldin-tayyorlang.mp4](028-botdan-oldin-tayyorlang.mp4) | Chek-list | 22.9 s | - | Botdan oldin nimalarni tayyorlash kerak |
-| 029 | [029-bot-qimmatmi.mp4](029-bot-qimmatmi.mp4) | Savol-javob | 19.2 s | - | Bot qimmatmi? |
-| 030 | [030-javob-kech-boldi.mp4](030-javob-kech-boldi.mp4) | Hikoya | 23.9 s | - | Javob kech bo'ldi |
+| 014 | [014-5-takroriy-ish.mp4](014-5-takroriy-ish.mp4) | Ro'yxat | 24.1 s | diktor | Bot qiladigan 5 ta takroriy ish |
+| 015 | [015-buyurtma-5-qadamda.mp4](015-buyurtma-5-qadamda.mp4) | Qadamlar | 22.8 s | diktor | Mijoz buyurtmasi 5 qadamda |
+| 016 | [016-tushlik-payti.mp4](016-tushlik-payti.mp4) | Soat bo'yicha hikoya | 23.4 s | diktor | Tushlik payti ham bot ishda |
+| 017 | [017-buyurtma-yozish-vaqti.mp4](017-buyurtma-yozish-vaqti.mp4) | Misol hisob | 19.5 s | diktor | Buyurtmani qo'lda yozishga ketadigan vaqt (misol) |
+| 018 | [018-bot-nima-qilmasligi-kerak.mp4](018-bot-nima-qilmasligi-kerak.mp4) | Chek-list | 27.2 s | diktor | Bot hech qachon qilmasligi kerak bo'lgan ishlar |
+| 019 | [019-bot-xato-qilsa.mp4](019-bot-xato-qilsa.mp4) | Savol-javob | 19.7 s | diktor | Bot xato qilsa nima bo'ladi? |
+| 020 | [020-soat-uchda.mp4](020-soat-uchda.mp4) | Hikoya | 23.5 s | diktor | Soat 03:00 da bir xabar |
+| 021 | [021-kiyim-olcham-rang.mp4](021-kiyim-olcham-rang.mp4) | Suhbat namunasi | 22.5 s | diktor | Kiyim do'koni: o'lcham va rang so'rovi |
+| 022 | [022-izohlarga-avto-javob.mp4](022-izohlarga-avto-javob.mp4) | Jarayon sxemasi | 16.4 s | diktor | Instagram izohlariga avtomatik javob |
+| 023 | [023-daftar-vs-jadval.mp4](023-daftar-vs-jadval.mp4) | Taqqoslash | 20.2 s | diktor | Buyurtma daftarda yoki jadvalda |
+| 024 | [024-botdan-oldin-3-savol.mp4](024-botdan-oldin-3-savol.mp4) | Ro'yxat | 19.0 s | diktor | Bot yaratishdan oldin 3 savol |
+| 025 | [025-savollar-bazasi-3-qadam.mp4](025-savollar-bazasi-3-qadam.mp4) | Qadamlar | 18.2 s | diktor | Bot uchun savollar bazasi 3 qadamda |
+| 026 | [026-bayram-arafasi.mp4](026-bayram-arafasi.mp4) | Soat bo'yicha hikoya | 21.9 s | diktor | Bayram arafasida kech soatda buyurtma |
+| 027 | [027-eslatma-qongiroqlari-vaqti.mp4](027-eslatma-qongiroqlari-vaqti.mp4) | Misol hisob | 22.0 s | diktor | Eslatma qo'ng'iroqlariga ketadigan vaqt (misol) |
+| 028 | [028-botdan-oldin-tayyorlang.mp4](028-botdan-oldin-tayyorlang.mp4) | Chek-list | 22.9 s | diktor | Botdan oldin nimalarni tayyorlash kerak |
+| 029 | [029-bot-qimmatmi.mp4](029-bot-qimmatmi.mp4) | Savol-javob | 19.2 s | diktor | Bot qimmatmi? |
+| 030 | [030-javob-kech-boldi.mp4](030-javob-kech-boldi.mp4) | Hikoya | 23.9 s | diktor | Javob kech bo'ldi |
 | 031 | [031-salon-yozilish.mp4](031-salon-yozilish.mp4) | Suhbat namunasi | 22.9 s | - | Go'zallik saloni: yozilish boti |
 | 032 | [032-ombor-ogohlantirish.mp4](032-ombor-ogohlantirish.mp4) | Jarayon sxemasi | 16.4 s | - | Tovar tugashidan oldin ogohlantirish |
 | 033 | [033-eslatma-qongiroq-vs-xabar.mp4](033-eslatma-qongiroq-vs-xabar.mp4) | Taqqoslash | 20.2 s | - | Eslatish: qo'ng'iroq yoki avtomatik xabar |

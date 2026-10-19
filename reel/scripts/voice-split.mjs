@@ -15,17 +15,29 @@ const beats = ids.map((id) => beatCount(VIDEOS.find((v) => v.id === id).body) + 
 const totalGaps = beats.reduce((a, b) => a + b, 0) - 1;
 
 const dur = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', raw]).toString().trim());
-const r = spawnSync('ffmpeg', ['-hide_banner', '-i', raw, '-af', 'silencedetect=noise=-38dB:d=0.7', '-f', 'null', '-'], { encoding: 'utf8' });
-const all = [];
-let st = null;
-for (const line of r.stderr.split('\n')) {
-  const a = line.match(/silence_start: ([\d.]+)/);
-  const b = line.match(/silence_end: ([\d.]+)/);
-  if (a) st = Number(a[1]);
-  if (b && st !== null) { all.push({ s: st, e: Number(b[1]) }); st = null; }
+function detect(d) {
+  const r = spawnSync('ffmpeg', ['-hide_banner', '-i', raw, '-af', `silencedetect=noise=-38dB:d=${d}`, '-f', 'null', '-'], { encoding: 'utf8' });
+  const all = [];
+  let st = null;
+  for (const line of r.stderr.split('\n')) {
+    const a = line.match(/silence_start: ([\d.]+)/);
+    const b = line.match(/silence_end: ([\d.]+)/);
+    if (a) st = Number(a[1]);
+    if (b && st !== null) { all.push({ s: st, e: Number(b[1]) }); st = null; }
+  }
+  if (st !== null) all.push({ s: st, e: dur });
+  return all.filter((g) => g.s > 0.08 && g.e < dur - 0.12);
 }
-if (st !== null) all.push({ s: st, e: dur });
-const inner = all.filter((g) => g.s > 0.08 && g.e < dur - 0.12);
+let inner = [];
+for (const d of [0.7, 0.55, 0.45, 0.38]) {
+  const cand = detect(d);
+  if (cand.length >= totalGaps) {
+    // eng uzun totalGaps ta pauza (ular [pause] belgilari), vaqt bo'yicha tartiblanadi
+    inner = [...cand].sort((a, b) => b.e - b.s - (a.e - a.s)).slice(0, totalGaps).sort((a, b) => a.s - b.s);
+    console.log(`chegara d=${d}: ${cand.length} topildi, ${totalGaps} tanlandi`);
+    break;
+  }
+}
 console.log(`pauzalar: ${inner.length} (kutilgan ${totalGaps}); uzunliklar:`, inner.map((g) => (g.e - g.s).toFixed(2)).join(' '));
 if (inner.length !== totalGaps) { console.error(`XATO: ${totalGaps} ta pauza kerak, topildi ${inner.length}`); process.exit(2); }
 // Videolar chegarasi: k-video oxiridan keyingi pauza = (beats[0..k] yig'indisi - 1)-chi pauza
